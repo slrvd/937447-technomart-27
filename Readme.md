@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Ann](https://up.htmlacademy.ru/htmlcss/27/user/937447).
-* Наставник: [Максим Конов](https://up.htmlacademy.ru/profile/id206795).
+* Наставник: [Максим Конов](https://up.htmlacademy.ru/htmlcss/27/user/206795).
 
 ---
 
