@@ -10,8 +10,8 @@
             <a><img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт"></a>
             <a href="img/icon-search.svg">Поиск</a>
             <form class="search-form" action="http://echo.htmlacademy.ru/">
-              <input type="text" id="header-search" placeholder="Поиск:">
-              <!-- svg -->
+               <input type="text" id="header-search" placeholder="Поиск:">
+               <!-- svg -->
             </form>
             <a href="img/icon-bookmark.svg">Закладки</a>
             <a href="img/icon-cart.svg">Корзина</a>
@@ -67,83 +67,117 @@
             <ul>
                <li>
                   <div>
-                     <a href="img/new-flag.png">New</a>
+                     <h2 class="visually-hidden">Каталог товаров:</h2>
+                     <button type="button"><img src="img/new-flag.png" alt="Новинка">New
+                     </button>
                   </div>
                   <p><a href="img/icon-1.svg">Материалы</a></p>
-                  <a href="#">на любой вкус</a>
+                  <button type="button">на любой вкус</button>
                </li>
                <li>
                   <p><a href="img/icon-2.svg">Инструмент</a></p>
-                  <a href="#">на все случаи</a>
+                  <button type="button">на все случаи</button>
                </li>
                <li>
                   <p><a href="img/icon-3.svg">Техника</a></p>
-                  <a href="#">для стройки</a>
+                  <button type="button">для стройки</button>
                </li>
             </ul>
          </div>
-         <div>
-            <!--Это слайды-->
-            <p><a href="img/slider-image.jpg">Дрели</a></p>
-            <p>Соседям на радость!</p>
-            <a  href="catalog.html">Открыть каталог</a>
-            <a href="#">
-            <img src="#" width="620" height="266" alt="Дрель">
-            </a>
+         <div class="sliders">
+            <input type="radio" id="slider-1" name="switch" checked>
+            <input type="radio" id="slider-2" name="switch">
+            <label for="slider-1" class="sliders-control slider-prev"></label>
+            <label for="slider-2" class="sliders-control slider-next"></label>
+            <div class="sliders-control">
+               <label for="slider-1"></label>
+               <label for="slider-2"></label>
+            </div>
+            <div class="slide-front">
+               <p class="slide-title">Дрели</p>
+               <p class="slide-description">Соседям на радость!</p>
+               <button type="button">
+               Открыть каталог
+               </button>
+               <a href="#">
+               <img src="img/index/slider-image.jpg" width="620" height="266" alt="Слайдер с дрелью">
+               </a>
+            </div>
+            <div class="slide-inner">
+               <div>
+                  <p class="slide-title">Перфораторы</p>
+                  <p class="slide-description">Настоящие мужские игрушки!</p>
+                  <button type="button">
+                  Открыть каталог
+                  </button>
+                  <a href="#">
+                  <img src="img/index/slider-image2.jpg" width="620" height="266" alt="Слайдер с перфоратором">
+                  </a>
+               </div>
+            </div>
          </div>
          <div>
             <ul>
                <li>
                   <p><a href="img/icon-4.svg">Скидка 50%</a></p>
-                  <a href="#">на 350 товаров</a>
+                  <button type="button">на 350 товаров</button>
                </li>
                <li>
                   <p><a href="img/icon-5.svg">Доставка</a></p>
-                  <a href="#">бесплатно</a>
+                  <button type="button">бесплатно</button>
                </li>
             </ul>
          </div>
          <section>
             <div >
                <h2>Популярные товары:</h2>
-               <a href="#">Все популярные товары</a>
+               <button type="button">Все популярные товары</button>
             </div>
             <ul>
                <li>
                   <img src="img/item-imageBFG9000.png" alt="Перфоратор BOSCH BFG 9000" width="218" height="137">
                   <h3>Перфоратор BOSCH<br> BFG 9000</h3>
                   <del>32500 Р.</del>
-                  <a href="img/item-button.png">25500 Р.</a>
+                  <button type="button">
+                  <img src="img/item-button.png" alt="Цена">25500 Р.
+                  </button>
                </li>
                <li>
                   <img src="img/item-imageBFG3000.png" alt="Перфоратор BOSCH BFG 3000" width="218" height="137">
                   <h3>Перфоратор BOSCH<br> BFG 3000</h3>
                   <del>22500 Р.</del>
-                  <a href="img/item-button.png">15500 Р.</a>
+                  <button type="button">
+                  <img src="img/item-button.png" alt="Цена">15500 Р.>
+                  </button>
                </li>
                <li>
                   <img src="img/item-imageBFG6000.png" alt="Перфоратор BOSCH BFG 6000" width="218" height="137">
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
                   <del>30500 Р.</del>
-                  <a href="img/item-button.png">25500 Р.</a>
+                  <button type="button">
+                  <img src="img/item-button.png" alt="Цена">25500 Р.
+                  </button>
                </li>
                <li>
                   <div>
-                     <a href="img/new-flag.png">new</a>
+                     <button type="button">
+                     <img src="img/new-flag.png" alt="Новинка">new</button>
                   </div>
                   <img src="img/item-imageBFG2000.png" alt="Перфоратор BOSCH BFG 2000" width="218" height="137">
                   <h3>Перфоратор BOSCH<br> BFG 2000</h3>
                   <del class="discount hidden">
                      <!--Изначальной цены нет-->
                   </del>
-                  <a href="img/item-button.png">12500 Р.</a>
+                  <button type="button">
+                  <img src="img/item-button.png" alt="Цена">12500 Р.
+                  </button>
                </li>
             </ul>
          </section>
          <section>
             <div>
                <h2>Популярные производители:</h2>
-               <a href="#">Все производители</a>
+               <button type="button">Все производители</button>
             </div>
             <ul>
                <li>
@@ -194,26 +228,51 @@
                Хороший интернет-магазин отличается от плохого не только ценами!<br>
                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
+            <input id="delivery" type="radio" name="service-switch" checked/>
+            <input id="garanty" type="radio" name="service-switch"/>
+            <input id="credit" type="radio" name="service-switch"/>
             <div>
                <ul>
                   <li>
-                     <a href="#">Доставка</a>
+                     <label for="delivery">Доставка</label>
                   </li>
                   <li>
-                     <a href="#">Гарантия</a>
+                     <label for="garanty">Гарантия</label>
                   </li>
                   <li>
-                     <a href="#">Кредит</a>
+                     <label for="credit">Кредит</label>
                   </li>
                </ul>
             </div>
             <div>
-               <a href="img/delivery.png"></a>
-               <h3>Доставка</h3>
-               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!
-               </p>
+               <div class="description">
+                  <div class="delivery">
+                     <a href="img/delivery.png"></a>
+                     <h3>Доставка</h3>
+                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                        Ведь мы неплохо заработаем,<br>
+                        поднимая его на ваш этаж!
+                     </p>
+                  </div>
+                  <div class="garanty">
+                     <a href="img/guarantee.jpg"></a>
+                     <h3>Гарантия</h3>
+                     <p>Если купленный у нас товар поломается или заискрит,<br>
+                        а также в случае пожара, спровоцированного его возгаранием,<br>
+                        вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                        сгоревший товар на новый.<br>
+                        Дом уж восстановите как-нибудь сами.
+                     </p>
+                  </div>
+                  <div class="credit">
+                     <a href="img/credit.jpg"></a>
+                     <h3>Кредит</h3>
+                     <p>Залезть в долговую яму стало проще! <br>
+                        Кредитные консультанты придут вам на помощь.
+                     </p>
+                     <button type="button"> Отправить заявку </button>
+                  </div>
+               </div>
             </div>
          </section>
          <div>
