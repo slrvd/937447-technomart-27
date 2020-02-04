@@ -10,15 +10,16 @@
    </head>
    <body>
       <header>
+        <div class="header-background">
          <div>
-            <a class="header-logo"><img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт лого"></a>
+            <a class="header-logo" href="#">Техномарт</a>
             <form class="search-form" action="http://echo.htmlacademy.ru/">
                <input type="text" placeholder="Поиск:" id="header-search">
                <!---svg-->
             </form>
             <a class="bookmarks" href="#"><img src="img/icon-bookmark.svg" alt="">Закладки</a>
             <a class="cart" href="#"><img src="img/icon-cart.svg" alt="">Корзина</a>
-            <button class="order">Оформить заказ</button>
+            <button class="order make-order-button">Оформить заказ</button>
          </div>
          <div>
             <p class="header-company">Интернет-магазин<br>
@@ -27,8 +28,7 @@
             </p>
             <div>
               <p class="header-number">
-               <a href="img/icon-phone.svg">
-                 +7 (812) 555-05-55</a></p>
+               <a href="#"><img src="img/icon-phone.svg" alt="Контактный номер">
                <address>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
             </div>
             <ul>
@@ -70,6 +70,7 @@
                </li>
             </ul>
          </nav>
+         </div>
       </header>
       <main>
          <div>
@@ -209,9 +210,7 @@
                      </button>
                   </li>
                   <li class="catalog-item">
-                     <div>
-                        <span class="corner"><img src="img/new-flag.png" alt="Новинка">New</span>
-                     </div>
+                        <span class="corner"><img src="img/new-flag.png" alt="Новинка"></span>
                      <div>
                         <button class="buy" type="button">
                         <img src="img/icon-cart.svg" alt="В корзину">Купить
@@ -231,15 +230,13 @@
                   <li class="catalog-item">
                      <img src="img/item-bfg3000.png" width="218" height="137" alt="Перфоратор BOSCH BFG 3000">
                      <h3>Перфоратор BOSCH<br>BFG 3000</h3>
-                     <del class="discount">22500 Р.</del>
+                     <del class="discount убрать цвет">22500 Р.</del>
                      <button type="button">
                      <img src="img/red-button.svg" alt="Цена">15500 Р.
                      </button>
                   </li>
                   <li class="catalog-item">
-                     <div>
-                     <span class="corner"><img src="img/new-flag.png" alt="Новинка">New</span>
-                   </div>
+                     <span class="corner"><img src="img/new-flag.png" alt="Новинка"></span>
                      <img src="img/item-bfg-6000.png" width="218" height="137" alt="Перфоратор BOSCH BFG 6000">
                      <h3>Перфоратор BOSCH<br>BFG 6000</h3>
                      <del class="discount">30500 Р.</del>
@@ -258,9 +255,7 @@
                      </button>
                   </li>
                   <li class="catalog-item">
-                     <div>
-                        <span class="corner"><img src="img/new-flag.png" alt="Новинка">New</span>
-                     </div>
+                        <span class="corner"><img src="img/new-flag.png" alt="Новинка"></span>
                      <img src="img/item-bfg3000.png" width="218" height="137" alt="Перфоратор BOSCH BFG 3000">
                      <h3>Перфоратор BOSCH<br>BFG 3000</h3>
                      <del class="discount">22500 Р.</del>
@@ -313,9 +308,9 @@
             </p>
          </section>
       </main>
-      <footer>
-         <div>
-            <a class="footer-logo"><img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт лого footer">Техномарт</a>
+      <footer class="page-footer">
+         <div class="page-footer-top">
+            <a class="footer-logo" href="#">Техномарт</a>
             <ul class="navigation-footer">
                <li>
                   <a href="#">Компания</a>

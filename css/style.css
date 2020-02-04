@@ -15,8 +15,21 @@ img {
     max-width: 100%;
     height: auto;
 }
+address {
+  width: 250px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  color: #32425c;
+}
+
 /*INDEX*/
 /*Лого*/
+.header-background {
+background-color: #f4f7f9;
+}
 .header-logo {
     padding: 14px 55px 10px;
     font-size: 24px;
@@ -24,6 +37,7 @@ img {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #ff5357;
+    display: inline-block;
 }
 /*Закладки, корзина, оформить*/
 .bookmarks,
@@ -32,6 +46,9 @@ img {
     display: block;
     padding-top: 12px;
     color: #ffffff;
+}
+.make-order-button {
+background-color: #63a63e;
 }
 /*Текст о компании*/
 .header-company {
@@ -59,9 +76,11 @@ img {
 /*Залогиниться*/
 .login {
     width: 120px;
+    height: 45px;
 }
-.registeration {
+.registration {
     width: 150px;
+    height: 45px;
 }
 
 /*Навигация:главная, компания, каталог и тд*/
@@ -126,6 +145,10 @@ img {
 }
 
 /*Footer*/
+
+.page-footer-top {
+    background-color: #3d546e;
+}
 .footer-logo {
     display: inline-block;
     padding: 18px 41px 20px 41px;
@@ -149,7 +172,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-family: "Cuprum", sans-serif;
-    color: #f4f8fa;
+    color: #ffd180;;
 }
 
 /*адрес*/
@@ -172,6 +195,12 @@ img {
 .catalog-navigation-footer li {
       margin-right: 60px;
   }
+.site-navigation-footer a {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Cuprum", sans-serif;
+    color: #f4f8fa;
+}
 /*Соц сети*/
 .social-button {
     width: 43px;
@@ -179,6 +208,7 @@ img {
     color: #000000;
     background-color: #29384a;
     border-radius: 50%;
+    display: inline-block;
 }
 
 /*HTMLcademy*/
@@ -217,13 +247,14 @@ img {
     font-size: 30px;
     line-height: 40px;
     font-family: "Cuprum", sans-serif;
-    color: #3d546e;
+    color: #32425c;
     text-transform: uppercase;
 }
 .discount {
     background-color: #8ed78f;
 }
 .catalog-item {
+    position: relative;
     width: 220px;
     text-align: center;
     border: 1px solid #eaeaea;
@@ -268,8 +299,8 @@ img {
 /*Уголок New*/
 .corner {
       position: absolute;
-      top: 7px;
-      right: -80px;
+      top: -1px;
+      right: -1px;
       width: 200px;
       font-size: 16px;
       line-height: 28px;
@@ -277,7 +308,6 @@ img {
       text-align: center;
       color: #f0f0f0;
       text-transform: lowercase;
-      background: #ff5357;
-      transform: rotate(45deg);
-  }
+
+
 }
