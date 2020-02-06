@@ -1,313 +1,373 @@
-html {
+/*Верхняя синяя линия*/
+
+.page-header {
+  font-size: 17px;
+  font-family: 'Cuprum';
 }
-body {
-    min-width: 960px;
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-    line-height: 24px;
-    font-family: "Cuprum", "PT Sans", sans-serif;
+
+.top-menu {
+  color: #FFFFFF;
 }
-a {
-    text-decoration: none;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-address {
-  width: 250px;
-  height: 13px;
-  font-family: Cuprum;
-  font-size: 14px;
-  font-style: normal;
+
+.logo {
+  font-size: 24px;
+  line-height: 42px;
+  width: 220px;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  color: #32425c;
+  color: #FFFFFF;
+  font-weight: 700;
+  background: #EE3643;
+}
+.menu-bookmarks-header {
+  background: url('../img/icon-bookmark.svg') no-repeat -65px -14px;
+  opacity: 0.3;
 }
 
-/*INDEX*/
-/*Лого*/
-.header-background {
-background-color: #f4f7f9;
-}
-.header-logo {
-    padding: 14px 55px 10px;
-    font-size: 24px;
-    font-family: "Cuprum", sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #ff5357;
-    display: inline-block;
-}
-/*Закладки, корзина, оформить*/
-.bookmarks,
-.cart,
-.order {
-    display: block;
-    padding-top: 12px;
-    color: #ffffff;
-}
-.make-order-button {
-background-color: #63a63e;
-}
-/*Текст о компании*/
-.header-company {
-    font-size: 16px;
-    line-height: 23px;
-    font-family: "Cuprum",  sans-serif;
-    color: #ff5357;
-    font-style: italic;
+.menu-bookmarks-header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px 12px 43px;
+  line-height: 42px;
 }
 
-/*Номер телефона*/
-.header-number {
-    width: 270px;
-    margin: 0;
-    padding: 0;
-    border: 3px solid #ffffff;
-}
-.header-number a {
-    font-size: 21px;
-    line-height: 18px;
-    font-family: "Cuprum",  sans-serif;
-    color: #fb463c;
+.menu-cart-header {
+  background: url('../img/icon-cart.svg') no-repeat -10px -15px;
+  opacity: 0.3;
 }
 
-/*Залогиниться*/
-.login {
-    width: 120px;
-    height: 45px;
+.menu-cart-header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px 12px 43px;
+  line-height: 42px;
 }
+
+.top-order-button {
+  color: #FFFFFF;
+  background: #63A63E;
+  text-decoration: none;
+  line-height: 39px;
+  padding: 13px 22px;
+}
+
+/*Текст, контакты, логин*/
+
+.pre-nav-box {
+  background-color: #f4f7f9;
+}
+
+.info-company {
+  margin: 0 20px 0 40px;
+  width: 200px;
+  color: #EE4F5B;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.phone-number {
+  border: 3px solid #FFFFFF;
+  padding: 8px 15px 8px 34px;
+  margin: 0 0 10px 0;
+  color: #e9292a;
+  font-size: 21px;
+  display: inline-block;
+}
+
+address {
+  color: #32425C;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.log-in,
 .registration {
-    width: 150px;
-    height: 45px;
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 25px;
+  background: #FFFFFF;
+  display: inline-block;
 }
 
-/*Навигация:главная, компания, каталог и тд*/
-.navigation-header {
-    background-color: #3d546e;
-}
-.navigation-header a {
-    display: block;
-    font-size: 17px;
-    line-height: 17px;
-    font-family: "Cuprum", sans-serif;
-    color: #ffffff;
+.log-in {
+  margin-right: 10px;
+  padding: 12px 26px 12px 46px;
 }
 
-/*О компании*/
-.title-company {
-    margin: 0;
-    font-size: 30px;
-    font-family: "Cuprum", sans-serif;
-    text-transform: uppercase;
+/*Навигация страницы (Синяя полоска перед главным содержимым)*/
+
+.menu-top {
+  background: #32425c;
+  border-bottom: 5px solid #293449;
 }
-.about-company p {
-    margin: 0;
-    padding: 0;
+
+.navigation-list {
+  text-align: center;
 }
-/*Список доставок*/
+
+.navigation-list li {
+  display: inline-block;
+}
+
+.navigation-list a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 19px 33px;
+}
+
+/*Основное содержимое страницы*/
+
+/*Блоки*/
+
+.new {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.block,
+.block-button {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.material-pic {
+  background: #F6B22D url("../img/icon-1.svg") no-repeat 0 0;
+  position: relative;
+}
+
+.instruments-pic {
+  background: #4AAFDE url("../img/icon-2.svg") no-repeat 0 0;
+}
+
+.tech-pic {
+  background: #CC79D1 url("../img/icon-3.svg") no-repeat 0 0;
+}
+
+
+.discount-pic {
+  background: #85D179 url("../img/icon-4.svg") no-repeat 0 0;
+  float: right;
+}
+
+.delivery-pic {
+  background: #F6B22D url("../img/icon-5.svg") no-repeat 0 0;
+  float: right;
+}
+
+/*Слайдер*/
+
+.button {
+  display: block;
+  font-family: 'Cuprum';
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  padding: 10px 0;
+}
+
+.open-catalog {
+  display: inline-block;
+  padding: 10px 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/*Популярные товары линейка*/
+
+.popular-items {
+  background: #F7F3EC;
+  margin-bottom: 20px;
+ }
+
+.catalog-index {
+  margin-bottom: 40px;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
+.all-popular {
+}
+
+/*Каталог популярных товаров*/
+
+.bosch-index {
+  padding: 0 25px;
+  margin: 10px 0;
+  display: block;
+  color: black;
+  text-decoration: none;
+  line-height: 1.11;
+}
+
+.old-price {
+  color: #999;
+  line-height: 1.06;
+  font-weight: bold;
+}
+
+.price {
+  display: block;
+  position: absolute;
+  left: 45px;
+  bottom: 20px;
+  width: 80px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  color: white;
+  background: #EE3643;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.06;
+}
+
+/*Популярные производители*/
+.brand {
+  width: 220px;
+  height: 145px;
+  display: inline-block;
+  margin: 0 16px 16px 0;
+  border: 1px solid #ccc;
+}
+
+/*Сервисы*/
+
+.service-text {
+  font-weight: 300;
+  line-height: 1.846;
+  margin: 0;
+}
+
+.services {
+  background: #F1F5F7;
+  margin-bottom: 70px;
+}
+
+.services h1 {
+  color: #000000;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.8;
+  padding-top: 60px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+/*Доставка*/
+
+.service-delivery {
+  width: 200px;
+  padding: 20px;
+  background: #32425C;
+  color: #ffffff;
+  font-family: 'Cuprum';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  border-bottom: 0.1px solid black;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+}
+
+/*О компании и карта*/
+
+.about-company-down {
+  margin: 0 0 35px 0;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.8;
+}
 
 .delivery-list {
-    margin: 0;
-    padding: 0;
+
 }
 
 .delivery-list li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: "Cuprum", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+  font-family: 'Cuprum';
 }
 
-/*Заблудились?*/
-
-.about-company-button{
-      padding: 10px 40px;
+.about-company-button {
+  width: 220px;
+  margin: 10px 0 0;
+  padding: 10px 40px;
 }
 
 .contacts p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .contacts img {
-    margin-bottom: 37px;
+  margin-bottom: 37px;
 }
 .button-map {
-    margin: 0;
-    padding: 0;
-}
-.contacts-button {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-/*Footer*/
+/*Футер*/
+
+.address-footer {
+  display: inline-block;
+}
 
 .page-footer-top {
-    background-color: #3d546e;
+  background: #32425C;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 1.333;
+  padding-bottom: 50px;
 }
-.footer-logo {
-    display: inline-block;
-    padding: 18px 41px 20px 41px;
-    font-size: 30px;
-    line-height: 30px;
-    font-family: "Cuprum", sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #ff5357;
-}
+
 .navigation-footer {
-    margin: 0;
-    padding: 0;
-    padding-top: 40px;
+  text-decoration: none;
+  color: #f1f5f7;
+  padding: 10px;
 }
 
-.navigation-footer li {
-    margin-right: 60px;
+.navigation-footer-gold a {
+  color: #FFD180;
+  text-decoration: none;
+  padding: 10px;
 }
-.navigation-footer a {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Cuprum", sans-serif;
-    color: #ffd180;;
+.footer-low {
+  background: #293449;
+  color: #FFFFFF;
+  font-family: 'Cuprum';
+  font-size: 16px;
+  line-height: 1.125;
 }
-
-/*адрес*/
-.address-phone{
-    margin: 0;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Cuprum", sans-serif;
-    color: #f4f8fa;
-}
-
-/*Навигация футер*/
-.catalog-navigation-footer {
-      margin: 0;
-      padding: 0;
-      padding-left: 12px;
-      list-style: none;
-  }
-
-.catalog-navigation-footer li {
-      margin-right: 60px;
-  }
-.site-navigation-footer a {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Cuprum", sans-serif;
-    color: #f4f8fa;
-}
-/*Соц сети*/
 .social-button {
     width: 43px;
     height: 43px;
     color: #000000;
     background-color: #29384a;
     border-radius: 50%;
-    display: inline-block;
 }
 
 /*HTMLcademy*/
 
 .mail-htmlacademy,
-.htmlacademy
-{
-    color: #ffda96;
-    text-decoration: none;
+.htmlacademy {
+   color: #ffda96;
+   text-decoration: none;
   }
-
-/*CATALOG*/
-.logged-in {
-    font-size: 21px;
-    font-family: "Cuprum",  sans-serif;
-    color: #000000;
-    background-color: #ffffff;
-  }
-.user-nav-links {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "Cuprum", sans-serif;
-}
-
-.user-navi-links li {
-
-}
-
-/*Список товаров с картинками*/
-
-.catalog-name {
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    line-height: 40px;
-    font-family: "Cuprum", sans-serif;
-    color: #32425c;
-    text-transform: uppercase;
-}
-.discount {
-    background-color: #8ed78f;
-}
-.catalog-item {
-    position: relative;
-    width: 220px;
-    text-align: center;
-    border: 1px solid #eaeaea;
-}
-
-.catalog-item img {
-
-}
-
-.catalog-item h3 {
-    margin: 0;
-    padding: 0 15px;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    font-family: "PTSans", sans-serif;
-    color: #000000;
-}
-
-.catalog-item .discount {
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "PTSans", sans-serif;
-    color: #a9a9a9;
-    text-decoration: line-through;
-  }
-
-
-/*Купить/В закладки*/
-.buy {
-   color: #ffffff;
-    background-color: #63a63e;
-    border-bottom: 3px solid #367315;
-}
-
-}
-.in-bookmark {
-    color: #33445a;
-    border: 2px solid #63a63e;
-}
-
-/*Уголок New*/
-.corner {
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      width: 200px;
-      font-size: 16px;
-      line-height: 28px;
-      font-family: "PT Sans Narrow", sans-serif;
-      text-align: center;
-      color: #f0f0f0;
-      text-transform: lowercase;
-
-
-}
