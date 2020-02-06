@@ -1,3 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+/*ГЛАВНАЯ*/
+
 /*Верхняя синяя линия*/
 
 .page-header {
@@ -194,7 +207,7 @@ address {
   margin-bottom: 20px;
  }
 
-.catalog-index {
+.catalog {
   margin-bottom: 40px;
   font-family: 'Open Sans';
   text-align: center;
@@ -205,7 +218,7 @@ address {
 
 /*Каталог популярных товаров*/
 
-.bosch-index {
+.bosch {
   padding: 0 25px;
   margin: 10px 0;
   display: block;
@@ -371,3 +384,211 @@ address {
    color: #ffda96;
    text-decoration: none;
   }
+
+/*КАТАЛОГ*/
+
+.breadcrumbs {
+  padding: 0;
+  margin: 20px 20px 20px 30px;
+  position: relative;
+}
+
+.breadcrumbs li {
+  list-style: none;
+  display: inline-block;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-name {
+  background: #f2f6f8;
+  font-family: 'Cuprum';
+  color: #32425c;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 30px;
+  margin: 0 0 20px;
+}
+
+.left-side {
+  float: left;
+  width: 220px;
+  position: relative;
+  margin: 0 0 60px;
+}
+
+.side-filter {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: #f7f3ec;
+  padding: 16px 16px;
+  margin: 0 0 12px;
+}
+
+.left-side legend {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.877;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+  padding: 0 0 10px;
+}
+
+.price-control {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  background: #f7f3ec;
+  border-radius: 5px;
+}
+
+.brand-filter {
+  padding: 0 0 40px;
+  position: relative;
+}
+
+.charge-type {
+  padding: 0 0 40px;
+  position: relative;
+}
+
+.right-side {
+  float: right;
+  width: 700px;
+  margin: 0 0 60px;
+}
+
+.sort-control {
+  margin: 0;
+  padding: 0;
+  float: right;
+  position: relative;
+}
+
+.sort-controls a {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.option {
+  padding: 10px 5px 3px;
+  color: #bcbcbc;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-down,
+.sort-up {
+  padding: 10px;
+  margin: 0 5px 0 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  opacity: 0.5;
+}
+.sort-down {
+  background: url('..img/icon-down-dir.svg') no-repeat 10px 97%;
+}
+
+.sort-up {
+  background: url('../img/icon-up-dir.svg') no-repeat 10px -33px;
+  margin: 0;
+}
+
+.catalog-item {
+  width: 220px;
+  min-height: 250px;
+  position: relative;
+  display: inline-block;
+  margin: 0 16px 16px 0;
+  padding-bottom: 70px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+/*Новый товар купить*/
+.buy,
+.in-bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  background: #63a63e;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  }
+
+..catalog-paginator {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.catalog-paginator ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-paginator ul li {
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.page-button {
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 5%;
+}
+
+.about-drill {
+  background: #f2f6f8;
+}
+
+.about-drill h2 {
+  font-family: 'Cuprum';
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.about-drill p {
+  font-family: 'OpenSans', sans-serif;
+  color: #000000;
+  line-height: 24px;
+  margin: 0;
+}
