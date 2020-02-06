@@ -137,7 +137,7 @@ address {
 /*Блоки*/
 
 .new {
-  position: absolute;
+  position: relative;
   top: -1px;
   right: -1px;
   width: 200px;
@@ -205,6 +205,18 @@ address {
 .popular-items {
   background: #F7F3EC;
   margin-bottom: 20px;
+ }
+
+ .popular-item-title {
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
  }
 
 .catalog {
@@ -357,11 +369,21 @@ address {
   padding: 10px;
 }
 
+.navigation-footer-gold {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-footer-gold a {
-  color: #FFD180;
+  color: ##ffda96;
   text-decoration: none;
   padding: 10px;
 }
+
+
 .footer-low {
   background: #293449;
   color: #FFFFFF;
