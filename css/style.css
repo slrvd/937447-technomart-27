@@ -407,20 +407,28 @@ address {
 /*Популярные товары линейка*/
 
 .popular-items {
+  width: 253px;
+  float: right;
+  margin: 25px 20px;
+}
+.popular-items {
   background: #F7F3EC;
   margin-bottom: 20px;
  }
 
- .popular-item-title {
-  font-family: "Cuprum";
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
+ .popular-items h2 {
+  float: left;
   color: #32425c;
+  text-transform: uppercase;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 0 30px;
+  line-height: 89px;
+  max-width: 700px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
  }
 
 .catalog {
@@ -429,7 +437,36 @@ address {
   text-align: center;
 }
 
-.all-popular {
+.catalog-item {
+  width: 220px;
+  min-height: 250px;
+  position: relative;
+  display: inline-block;
+  margin: 0 16px 16px 0;
+  padding-bottom: 70px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.catalog-item .image {
+  margin: auto;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
+}
+
+.catalog-item .bosch {
+  padding: 0 25px;
+  margin: 10px 0;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-all-popular {
 }
 
 /*Каталог популярных товаров*/
@@ -459,9 +496,10 @@ address {
   padding: 10px 30px;
   color: white;
   background: #EE3643;
+  border-radius: 3px;
   text-decoration: none;
   font-weight: 600;
-  line-height: 1.06;
+  line-height: 1.126;
 }
 
 /*Популярные производители*/
@@ -473,7 +511,20 @@ address {
   border: 1px solid #ccc;
 }
 
+.brand:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brand .image {
+  margin: auto;
+}
+
+.brand .image img {
+  max-width: 100%;
+  text-align: center;
+}
 /*Сервисы*/
+
 
 .service-text {
   font-weight: 300;
@@ -486,7 +537,7 @@ address {
   margin-bottom: 70px;
 }
 
-.services h1 {
+.services h2 {
   color: #000000;
   font-family: 'Cuprum';
   font-size: 30px;
@@ -516,6 +567,16 @@ address {
 
 /*О компании и карта*/
 
+.company {
+  margin: 0 auto 85px;
+  line-height: 1.846;
+}
+
+.about {
+  float: left;
+  width: 600px;
+}
+
 .about-company-down {
   margin: 0 0 35px 0;
   font-family: 'Cuprum';
@@ -524,11 +585,53 @@ address {
   line-height: 0.8;
 }
 
-.delivery-list {
+.about-header,
+.contacts-title {
+  margin: 0 0 35px 0;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.8;
+}
 
+.about p {
+  margin: 15px 0;
+}
+
+.delivery-list {
+  list-style: none;
+  position: relative;
+  margin: 25px 0;
 }
 
 .delivery-list li {
+  color: #000000;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+  font-family: 'Cuprum';
+}
+
+.delivery-list li:before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #FB565A;
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+
+.delivery-list li:nth-child(2):before {
+  top: 53px;
+}
+
+.delivery-list li:nth-child(3):before {
+  top: 89px;
+}
+
+
+.delivery-list a {
   color: #000000;
   font-size: 18px;
   line-height: 2;
@@ -542,66 +645,151 @@ address {
   padding: 10px 40px;
 }
 
+.contacts {
+  float: right;
+  width: 320px;
+}
+
 .contacts p {
   margin-bottom: 30px;
 }
 .contacts img {
   margin-bottom: 37px;
 }
-.button-map {
+.map {
   margin: 0;
   padding: 0;
+}
+.map img {
+  margin: 14px 0;
 }
 
 /*Футер*/
 
-.address-footer {
-  display: inline-block;
-}
-
-.page-footer-top {
+.footer-upper {
   background: #32425C;
   font-family: 'Cuprum';
   font-size: 18px;
   line-height: 1.333;
   padding-bottom: 50px;
 }
-
-.navigation-footer {
-  text-decoration: none;
-  color: #f1f5f7;
-  padding: 10px;
+.footer-contacts {
+  float: left;
+  color: #FFFFFF;
+  width: 300px;
+  position: relative;
 }
 
-.navigation-footer-gold {
+.footer-upper .logo {
+  line-height: 64px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.address-footer {
+   display: inline-block;
+}
+
+.footer-menu {
+  float: right;
+  padding-top: 35px;
+  width: 590px;
+}
+
+.navigation-footer {
   display: flex;
-  align-items: center;
-  position: relative;
-  margin: 0;
+  margin: 0 0 35px;
   padding: 0;
 }
 
-.navigation-footer-gold a {
-  color: ##ffda96;
+.navigation-footer li {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.navigation-footer a {
+ text-decoration: none;
+ color: #f1f5f7;
+ padding: 10px;
+}
+
+.navigation-gold {
+ display: flex;
+ align-items: center;
+ position: relative;
+ margin: 0;
+ padding: 0;
+}
+
+.navigation-gold li {
+  list-style: none;
+  padding-left: 35px;
+}
+
+.navigation-gold a {
+  color: #FFD180;
   text-decoration: none;
   padding: 10px;
 }
 
-
-.footer-low {
+.footer-lower {
   background: #293449;
   color: #FFFFFF;
   font-family: 'Cuprum';
   font-size: 16px;
   line-height: 1.125;
 }
-.social-button {
-    width: 43px;
-    height: 43px;
-    color: #000000;
-    background-color: #29384a;
-    border-radius: 50%;
+
+.footer-lower .container {
+  padding: 40px 0;
 }
+
+.copyright {
+  float: left;
+  width: 350px;
+  margin: 0 30px 0 0;
+}
+
+.footer-social {
+  float: left;
+  width: 200px;
+  margin-right: 60px;
+}
+.social-button li {
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 50%;
+  background: #212A3A;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  margin-right: 5px;
+}
+
+.feedback {
+  float: left;
+  width: 140px;
+  margin: 0;
+}
+
+.feedback a {
+  color: #FFD180;
+  text-decoration: none;
+}
+
+.developer {
+   float: right;
+   margin: 0;
+   width: 130px;
+ }
+
+ .developer a {
+   color: #FFD180;
+   text-decoration: none;
+ }
 
 /*HTMLcademy*/
 
