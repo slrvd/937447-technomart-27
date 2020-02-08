@@ -11,28 +11,32 @@
    <body>
       <header class="page-header">
         <div class="top-menu">
-         <div>
+         <div class="container">
+           <div class="menu-wrapper">
             <a class="logo" href="#">Техномарт</a>
             <form class="search-form" action="http://echo.htmlacademy.ru/">
                <input type="text" id="header-search" placeholder="Поиск:">
                <!-- svg -->
             </form>
             <a class="menu-bookmarks-header" href="#">Закладки</a>
-            <a class="-menu-cart-header" href="#"><img src="img/icon-cart.svg" alt="">Корзина</a>
+            <a class="menu-cart-header" href="#"><img src="img/icon-cart.svg" alt="">Корзина</a>
             <button class="top-order-button">Оформить заказ</button>
          </div>
+       </div>
          <div class="pre-nav-box">
+           <div class="container">
+             <div class="pre-nav-info">
             <p class="info-company">Интернет-магазин<br>
                строительных материалов<br>
                и инструментов для ремонта
             </p>
-            <div>
+            <div class="pre-nav-contacts">
                <p class="phone-number">
                <a href="#"><img src="img/icon-phone.svg" alt="Контактный номер">
                +7 (812) 555-05-55</a></p>
                <address>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
             </div>
-            <ul>
+            <ul class="pre-nav-account login-popup">
                <li>
                   <a class="log-in" href="#"><img src="img/icon-login.svg" alt="Войти"></a>
                </li>
@@ -41,7 +45,9 @@
                </li>
             </ul>
          </div>
-         <nav class="menu-top">
+       </div>
+     </div>
+         <nav class="menu-low">
             <ul class="navigation-list">
                <li>
                   <a href="index.html">Главная</a>
@@ -68,30 +74,32 @@
          </nav>
        </div>
       </header>
-      <main>
-         <div>
-            <ul>
+      <main class="main">
+         <div class="container">
+          <div class="block-item">
+            <ul class="row catalog-menu">
                <li>
-                  <div>
-                     <h2 class="visually-hidden">Каталог товаров:</h2>
-                     <span class="new"><img src="img/new-flag.png" alt="Новинка">New</span>
+                  <h2 class="visually-hidden">Каталог товаров:</h2>
+                <div>
+                    <span class="new"><img src="img/new-flag.png" alt="Новинка">New</span>
                   </div>
-                  <p class="block"><a class="materials-pic" href="catalog.html">Материалы</a></p>
+                  <p class="block"><a class="blocks materials-pic " href="catalog.html">Материалы</a></p>
                   <button class="block-button" type="button">на любой вкус</button>
                </li>
                <li>
-                  <p class="block"><a class="instruments-pic" href="catalog.html">Инструмент</a></p>
+                  <p class="block"><a class=" blocks instruments-pic" href="catalog.html">Инструмент</a></p>
                   <button class="block-button" type="button">на все случаи</button>
                </li>
                <li>
-                  <p class="block"><a class="tech-pic" href="catalog.html">Техника</a></p>
+                  <p class="block"><a class=" blocks tech-pic" href="catalog.html">Техника</a></p>
                   <button class="block-button" type="button">для стройки</button>
                </li>
             </ul>
          </div>
+       </div>
          <div class="sliders">
-            <input type="radio" id="slider-1" name="switch" checked>
-            <input type="radio" id="slider-2" name="switch">
+            <input class="slider" type="radio" id="slider-1" name="switch" checked>
+            <input class="slider-switch" type="radio" id="slider-2" name="switch">
             <label for="slider-1" class="sliders-control slider-prev"></label>
             <label for="slider-2" class="sliders-control slider-next"></label>
             <div class="sliders-control">
@@ -235,7 +243,7 @@
             <div class="delivery">
                <ul class="service-delivery">
                   <li class="service-delivery">
-                     <button>Доставка</buton>
+                     <button>Доставка</button>
                   </li>
                   <li class="service-delivery">
                      <button>Гарантия</button>
@@ -290,7 +298,7 @@
                   <li>Автотрейдинг</li>
                   <li>ЖелДорЭкспедиция</li>
                </ul>
-               <button class="button about-company-button" type="button" цвет задать>Подробнее о компании</button>
+               <button class="button about-company-button" type="button">Подробнее о компании</button>
             </section>
             <section class="contacts">
                <h2 class="contacts-title">Контакты</h2>
