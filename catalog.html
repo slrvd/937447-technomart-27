@@ -9,28 +9,33 @@
       <title>HTML Academy: Техномарт</title>
    </head>
    <body>
-      <header class="page-header">
-        <div "top-menu">
-         <div>
+        <header class="page-header">
+        <div class="top-menu">
+         <div class="container">
+           <div class="menu-wrapper">
             <a class="logo" href="#">Техномарт</a>
             <form class="search-form" action="http://echo.htmlacademy.ru/">
                <input type="text" placeholder="Поиск:" id="header-search">
                <!---svg-->
             </form>
             <a class="menu-bookmarks-header" href="#">Закладки</a>
-            <a class="-menu-cart-header" href="#"><img src="img/icon-cart.svg" alt="">Корзина</a>
+            <a class="menu-cart-header" href="#"><img src="img/icon-cart.svg" alt="">Корзина</a>
             <button class="top-order-button">Оформить заказ</button>
          </div>
-         <div class="pre-nav-box">
-            <p class="info-company">Интернет-магазин<br>
-               строительных материалов<br>
-               и инструментов для ремонта
-            </p>
-            <div>
-              <p class="phone-number">
-               <a href="#"><img src="img/icon-phone.svg" alt="Контактный номер">
-               <address>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
-            </div>
+       </div>
+       <div class="pre-nav-box">
+         <div class="container">
+           <div class="pre-nav-info">
+          <p class="info-company">Интернет-магазин<br>
+             строительных материалов<br>
+             и инструментов для ремонта
+          </p>
+          <div class="pre-nav-contacts">
+             <p class="phone-number">
+             <a href="#"><img src="img/icon-phone.svg" alt="Контактный номер">
+             +7 (812) 555-05-55</a></p>
+             <address>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</address>
+          </div>
             <ul>
                <li>
                   <a href="img/icon-user.svg">Равшан Джамшутович</a>
@@ -45,33 +50,35 @@
                </li>
             </ul>
          </div>
-         <nav class="menu-top">
-            <ul  class="navigation-list">
-               <li>
-                  <a href="index.html">Главная</a>
-               </li>
-               <li>
-                  <a href="#">Компания</a>
-               </li>
-               <li>
-                  <a href="catalog.html">Кaталог</a>
-               </li>
-               <li>
-                  <a href="#">Новости</a>
-               </li>
-               <li>
-                  <a href="#">Спецпредложения</a>
-               </li>
-               <li>
-                  <a href="#">Доставка</a>
-               </li>
-               <li>
-                  <a href="#">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-         </div>
-      </header>
+       </div>
+     </div>
+     <nav class="menu-low">
+        <ul class="navigation-list">
+           <li>
+              <a href="index.html">Главная</a>
+           </li>
+           <li>
+              <a href="#">Компания</a>
+           </li>
+           <li>
+              <a href="catalog.html">Кaталог</a>
+           </li>
+           <li>
+              <a href="#">Новости</a>
+           </li>
+           <li>
+              <a href="#">Спецпредложения</a>
+           </li>
+           <li>
+              <a href="#">Доставка</a>
+           </li>
+           <li>
+              <a href="#">Контакты</a>
+           </li>
+        </ul>
+     </nav>
+   </div>
+  </header>
       <main>
          <div>
             <ul class="breadcrumbs">
@@ -146,6 +153,7 @@
                      </fieldset>
                      <fieldset class="charge-type">
                         <legend>Питание:</legend>
+                        <div class="radioselect">
                         <ul>
                            <li>
                               <label>
@@ -160,6 +168,7 @@
                               </label>
                            </li>
                         </ul>
+                      </div>
                      </fieldset>
                      <button type="submit" class="filter-button">Показать</button>
                   </form>
@@ -179,7 +188,7 @@
                </div>
             </div>
             <div class="catalog">
-               <div class="catalog-item">
+               <div class="catalog-item catalog-item-catalog">
                   <a href="img/modal-check.svg">
                   <span class="visually-hidden">Товар добавлен</span>
                   </a>
@@ -299,16 +308,22 @@
             </div>
          </article>
          <section class="about-drill">
+           <div class="container">
+             <div class="about-products-text>"
             <h2>Пара слов о перфораторах</h2>
             <p class="about=drill-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
                ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
+          </div>
+        </div>
          </section>
       </main>
-      <footer class="page-footer">
-         <div class="page-footer-top">
+      <footer class="footer-upper">
+        <div class="container">
+         <div class="footer-contacts">
             <a class="logo" href="#">Техномарт</a>
+             <div class="footer-menu">
             <ul class="navigation-footer">
                <li>
                   <a href="#">Компания</a>
@@ -327,7 +342,7 @@
                </li>
             </ul>
             <address class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</address>
-            <ul class="navigation-navigation-gold">
+            <ul class="navigation-gold">
                <li>
                   <a href="#">Материалы</a>
                </li>
@@ -342,31 +357,35 @@
                </li>
             </ul>
          </div>
-         <div class="footer-low">
-            <p>&copy; 2010–2017 Компания «Техномарт»
+        </div>
+       </div>
+         <div class="footer-lower">
+           <div class="container">
+            <p class="copyright">&copy; 2010–2017 Компания «Техномарт»</p>
             <p>Все права защищены</p>
             <ul class="footer-social">
-              <li>
-                 <a class="social-button" href="#"><img src="img/icon-vk.svg" alt="Вконтакте">
-                 </a>
-              </li>
-              <li>
-                 <a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук">
-                 </a>
-              </li>
-              <li>
-                 <a class="social-button" href="№"><img src="img/icon-insta.svg" alt="Инстаграм">
-                 </a>
-              </li>
+               <li>
+                  <a class="social-button" href="#"><img src="img/icon-vk.svg" alt="Вконтакте">
+                  </a>
+               </li>
+               <li>
+                  <a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук">
+                  </a>
+               </li>
+               <li>
+                  <a class="social-button" href="№"><img src="img/icon-insta.svg" alt="Инстаграм">
+                  </a>
+               </li>
             </ul>
             <ul class="footer-htmlacademy">
-               <li>Обратная связь:
+               <li class="feedback">Обратная связь:
                   <a class="mail-htmlacademy" href="#">mail@htmlacademy.ru</a>
                </li>
-               <li>Разработано -
-                  <a  class="htmlacademy" href="#">htmlacademy.ru</a>
+               <li class="developer">Разработано -
+                  <a class="htmlacademy" href="#">htmlacademy.ru</a>
                </li>
             </ul>
+          </div>
          </div>
       </footer>
    </body>

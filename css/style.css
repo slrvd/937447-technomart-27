@@ -801,6 +801,7 @@ address {
 
 /*КАТАЛОГ*/
 
+
 .breadcrumbs {
   padding: 0;
   margin: 20px 20px 20px 30px;
@@ -824,7 +825,7 @@ address {
   text-decoration: none;
 }
 
-.catalog-name {
+.calalog-header {
   background: #f2f6f8;
   font-family: 'Cuprum';
   color: #32425c;
@@ -835,7 +836,8 @@ address {
   margin: 0 0 20px;
 }
 
-.left-side {
+.left-side,
+.filters {
   float: left;
   width: 220px;
   position: relative;
@@ -864,6 +866,16 @@ address {
   padding: 0 0 10px;
 }
 
+.price-filter {
+  position: relative;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 220px;
+  padding: 0 0 40px;
+}
+
 .price-control {
   position: relative;
   height: 80px;
@@ -871,7 +883,9 @@ address {
   padding: 0 30px;
   background: #f7f3ec;
   border-radius: 5px;
+  overflow: hidden;
 }
+
 
 .brand-filter {
   padding: 0 0 40px;
@@ -881,6 +895,10 @@ address {
 .charge-type {
   padding: 0 0 40px;
   position: relative;
+}
+
+.radioselect {
+
 }
 
 .right-side {
@@ -899,6 +917,10 @@ address {
 .sort-controls a {
   display: inline-block;
   margin: 0 30px;
+}
+
+.sort-controls a:last-child {
+  margin: 0 10px;
 }
 
 .option {
@@ -920,12 +942,13 @@ address {
   color: transparent;
   opacity: 0.5;
 }
+
 .sort-down {
-  background: url('..img/icon-down-dir.svg') no-repeat 10px 97%;
+  background: url("/img/icon-down-dir.svg") no-repeat 10px 97%;
 }
 
 .sort-up {
-  background: url('../img/icon-up-dir.svg') no-repeat 10px -33px;
+  background: url("/img/icon-up-dir.svg") no-repeat 10px -33px;
   margin: 0;
 }
 
@@ -941,7 +964,9 @@ address {
   font-weight: bold;
   vertical-align: top;
 }
-
+.catalog-item-catalog:nth-child(3n) {
+  margin-right: 0;
+}
 /*Новый товар купить*/
 .buy,
 .in-bookmark {
@@ -962,7 +987,7 @@ address {
   border-radius: 3px;
   }
 
-..catalog-paginator {
+.catalog-paginator {
   margin: 0;
   padding: 10px 0;
 }
@@ -977,6 +1002,10 @@ address {
   display: inline-block;
   text-align: center;
   padding-left: 5px;
+}
+
+.catalog__paginator ul li:first-child {
+  padding-left: 0;
 }
 
 .page-button {
@@ -1005,4 +1034,10 @@ address {
   color: #000000;
   line-height: 24px;
   margin: 0;
+}
+
+.about-product-text {
+  width: 940px;
+  padding: 70px 0;
+  margin: 0 auto;
 }
