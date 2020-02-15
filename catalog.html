@@ -20,7 +20,7 @@
                      <!--svg xmlns=</svg> СЮДА -->
                   </form>
                   <a class="bookmarks" href="#">Закладки: 0</a>
-                  <a class="cart" href="#">Корзина: 0</a>
+                  <a class="cart-catalog" href="#">Корзина: 10</a>
                   <a class="order" href="#">Оформить заказ</a>
                </div>
             </div>
@@ -37,7 +37,7 @@
                <div class="block">
                   <ul class="user-blocks">
                      <li>
-                        <a class="logged" href="#">Равшан Джамшутович</a>
+                        <a class="logged" href="#"><span>Равшан Джамшутович</span></a>
                      </li>
                   </ul>
                   <ul class="user-links">
@@ -109,19 +109,21 @@
                            <p>Фильтр:</p>
                         </div>
                         <form class="filter" method="get" action="http://echo.htmlacademy.ru/">
-                           <fieldset class="price-filter">
-                              <legend>Цена:</legend>
-                              <div class="price-filter-inputs">
-                                 <div class="price">
-                                    <div id="slider-range"></div>
-                                 </div>
-                                 <div class="price-inputs">
-                                    <input class="min-price" type="text" name="price-min" aria-label="Минимальная цена" value="0">
-                                    <span>—</span>
-                                    <input class="max-price" type="text" name="price-max" aria-label="Максимальная цена цена" value="30000">
-                                 </div>
+                          <section class="price-range">
+                            <h3>Цена:</h3>
+                             <div class="range-controls">
+                               <div class="scale">
+                                 <div class="bar"></div>
+                               </div>
+                                 <div class="toggle min-toggle"></div>
+                               <div class="toggle max-toggle"></div>
                               </div>
-                           </fieldset>
+                              <div class="price-controls">
+                                от
+                              <input class="min-price" type="text" value="0"> до
+                             <input class="max-price" type="text" value="30 000">
+                            </div>
+                          </section>
                            <fieldset class="brand-filter">
                               <legend>Производители:</legend>
                               <ul>
