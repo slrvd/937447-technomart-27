@@ -263,7 +263,7 @@ background-color: #33445a;
     color: #fb463c;
 }
 
-.phone-header a::before {
+.contacts-header a::before {
   content: "";
   position: absolute;
   top: 103px;
@@ -995,7 +995,7 @@ span {
     z-index: 0;
     width: 334px;
     height: 263px;
-    background-image: url("../img/guarantee.jpeg");
+    background-image: url("../img/guarantee.jpg");
     background-repeat: no-repeat;
 }
 
@@ -1007,7 +1007,7 @@ span {
     z-index: 0;
     width: 417px;
     height: 274px;
-    background-image: url("../img/credit.jpeg");
+    background-image: url("../img/credit.jpg");
     background-repeat: no-repeat;
 }
 
