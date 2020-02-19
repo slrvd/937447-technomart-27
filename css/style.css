@@ -162,8 +162,8 @@ background-color: #f4f7f9;
 }
 
 .menu-header-wrapper {
-background-color: #33445a;
-
+background-color: #293449;
+height: 42px;
 }
 
 .menu-header-wrapper a {
@@ -187,9 +187,10 @@ background-color: #33445a;
    font-family: "Cuprum", sans-serif;
    color: #ffffff;
    text-transform: uppercase;
-   background-color: #ff5357;
+   background-color: #ee3643;
    cursor: pointer;
    transition: 200ms all;
+   height:20px;
 }
 .logo-header::after {
 content:"";
@@ -210,7 +211,7 @@ background-color: #c23f42;
     background: #ba2732;
 }
 
-
+/*
 .header-searching {
     position: relative;
     width: 270px;
@@ -223,12 +224,61 @@ background-color: #c23f42;
     min-height: 42px;
     padding-left: 50px;
     color: inherit;
-    background: #33445a;
+    background: #293449;
     border: none;
 }
 
-/*по SVG сюда*/
 
+*/
+
+
+.search {
+  position: relative;
+  
+}
+
+.menu-header {
+	
+}
+
+.search input {
+  height: 32px;
+  width: 230px;
+  border: none;
+  padding: 5px 0 5px 40px;
+  background: #293449 url('../img/icon-search.svg') no-repeat 5% 50%;
+  color: #293449;
+}
+
+
+.search input:hover {
+  opacity: 1;
+  background: #212a3a url('../img/icon-search.svg') no-repeat 5% 50%;
+  color: #212a3a;
+}
+
+
+.search input:focus {
+  opacity: 1;
+  background: #ffffff url('../img/icon-search-red.svg') no-repeat 5% 50%;
+}
+
+
+.search label {
+  margin-left: 40px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  color: #ffffff;
+}
+
+.search input[type=text]:active +label {
+  color: #ffffff;
+}
+
+.search input[type=text]:focus +label {
+  display: none;
+}
 .bookmarks,
 .cart,
 .order,
@@ -251,7 +301,7 @@ background-color: #c23f42;
 .bookmarks::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 23%;
     left: 17px;
     width: 14px;
     height: 16px;
@@ -279,6 +329,7 @@ background-color: #c23f42;
    width: 140px;
    padding-left: 40px;
    background-color: #ee3643;
+   margin-bottom: 63px;
 }
 
 .cart:active {
@@ -312,8 +363,8 @@ background-color: #c23f42;
    padding-left: 20px;
    background-color: #63a63e;
    transition: 200ms all;
+  height: 30px;
 }
-
 .order:hover,
 .order:focus {
     background-color: #5fbb2d;
@@ -458,7 +509,7 @@ span {
     margin: 0;
     padding: 0 20px;
     list-style: none;
-    background-color: #3d546e;
+    background-color: #293449;
 
 }
 
@@ -765,7 +816,7 @@ span {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
-    background: #ff5357;
+    background: #ee3643;
     border: none;
     border-radius: 2px;
      transition: 150ms all;
@@ -1149,13 +1200,13 @@ span {
     line-height: 31px;
     font-family: "Cuprum", sans-serif;
     color: #ffffff;
-    background-color: #3d546e;
+    background-color: #32425c;
     border-top: 1px solid #485973;
     border-bottom: 1px solid #33445a;
 }
 
 .services-list li:hover {
-    background-color: #29384a;
+    background-color: #293449;
 }
 
 #service-delivery:checked ~ .range .delivery-menu-item,
@@ -1320,7 +1371,7 @@ span {
 /*ФУТЕР*/
 
 .page-footer-top {
-    background-color: #3d546e;
+    background-color: #32425c;
     margin-top: 63px;
 }
 
@@ -1336,7 +1387,7 @@ span {
     font-family: "Cuprum", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
-    background-color: #ff5357;
+    background-color: #ee3643;
     -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
             box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
@@ -1368,6 +1419,15 @@ span {
     line-height: 24px;
     font-family: "Cuprum", sans-serif;
     color: #f4f8fa;
+}
+
+.site-navigation-footer a:hover,
+.site-navigation-footer a:focus {
+    border-bottom: 1px solid #f4f8fa;
+}
+
+.site-navigation-footer a:active {
+    opacity: 0.5;
 }
 
 .nav-footer-range2 {
@@ -1408,10 +1468,16 @@ span {
     color: #ffda96;
 }
 
+.catalog-navigation-footer a:hover,
+.catalog-navigation-footer a:focus {
+    border-bottom: 1px solid #f1f5f7;
+}
+
+
 .page-footer-bottom {
     padding-top: 30px;
     padding-bottom: 28px;
-    background-color: #33445a;
+    background-color: #293449;
 }
 
 
@@ -1458,13 +1524,24 @@ span {
     width: 43px;
     height: 43px;
     color: #000000;
-    background-color: #29384a;
+    background-color: #212a3a;
     border-radius: 50%;
      color: transparent;
 }
 
+.social-button:hover,
+.social-button:focus {
+    background-color: #ee3643;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill: #ffffff;
+}
+
+
 .vk img{
-background: #212A3A
+
 }
 
 .fb {
@@ -1502,12 +1579,25 @@ background: #212A3A
     text-decoration: none;
 }
 
+.mail-link:hover,
+.dev-link:hover,
+.mail-link:focus,
+.dev-link:focus {
+    border-bottom: 1px solid #ffda96;
+}
+
+.mail-link:active,
+.dev-link:active {
+    color: #ee3643;
+    border: none;
+}
 
 
 /*КАТАЛОГ-СТРАНИЦА*/
 
 .inner-page .catalog {
     padding: 0;
+	margin-bottom: 32px;
 }
 .logged {
   position: relative;
@@ -1801,6 +1891,23 @@ background: #212A3A
     margin-bottom: 12px;
 }
 
+.brand-filter::before,
+.brand-filter::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.brand-filter::before {
+    top: -18px;
+}
+
+.brand-filter::after {
+    bottom: 0;
+}
+
 .brand-filter ul {
     margin: 0;
     padding: 0;
@@ -1827,8 +1934,6 @@ background: #212A3A
     left: 0;
     width: 23px;
     height: 23px;
-    border: 2px solid #c5c5c5;
-    border-radius: 2px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
 }
@@ -1913,7 +2018,7 @@ background: #212A3A
 
 .catalog-header p {
     width: 240px;
-    margin: -20px;
+    margin: 0px;
     margin-right: auto;
     text-transform: uppercase;
 }
@@ -1948,7 +2053,7 @@ background: #212A3A
     position: relative;
     color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 
@@ -1979,6 +2084,10 @@ background: #212A3A
 
 .sorting-btn-2 {
     margin-left: 21px;
+}
+
+.pagination-catalog {
+	margin-left: 21px;
 }
 
 
@@ -2024,6 +2133,7 @@ background: #212A3A
     display: block;
 }
 
+
 .pag-list .pag-item-current {
     color: #ffffff;
     background-color: #ee3643;
@@ -2031,9 +2141,18 @@ background: #212A3A
     cursor: default;
 }
 
+.pag-list a:hover,
+.pag-list a:focus {
+    border-color: #bdc6ca;
+}
+
 .pag-list .next {
-    margin-left: -10px;
+    margin-left: 2px;
     padding: 0 30px;
+}
+
+.pag-list a:active {
+    border-color: #ee3643;
 }
 
 .about-drills {
