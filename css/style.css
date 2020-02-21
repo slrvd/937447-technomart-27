@@ -53,7 +53,7 @@ width: 0px;
 }
 
 .container {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -157,6 +157,10 @@ width: 0px;
 /*HEADER*/
 
 .menu-header {
+  margin-bottom:  59px;
+}
+
+.menu-header {
 padding-bottom: 63px;
 background-color: #f4f7f9;
 }
@@ -234,11 +238,11 @@ background-color: #c23f42;
 
 .search {
   position: relative;
-  
+
 }
 
 .menu-header {
-	
+
 }
 
 .search input {
@@ -301,7 +305,7 @@ background-color: #c23f42;
 .bookmarks::before {
     content: "";
     position: absolute;
-    top: 23%;
+    top: 16%;
     left: 17px;
     width: 14px;
     height: 16px;
@@ -330,6 +334,7 @@ background-color: #c23f42;
    padding-left: 40px;
    background-color: #ee3643;
    margin-bottom: 63px;
+   height: 30px;
 }
 
 .cart:active {
@@ -396,13 +401,20 @@ background-color: #c23f42;
 }
 
 .phone-header {
-    width: 270px;
+  /*  width: 270px;
     margin: 0;
     padding: 0;
     padding-top: 9px;
     padding-bottom: 5px;
     padding-left: 70px;
     border: 3px solid #ffffff;
+}
+*/
+position: relative;
+margin-bottom: 5px;
+border: 3px solid #ffffff;
+padding: 1px 42px 9px 70px;
+
 }
 
 
@@ -468,8 +480,8 @@ background-color: #c23f42;
     margin-left: 20px;
 }
 
-span {
-  padding-left: 58px
+.log-name {
+  padding-left: 63px;
 }
 
 .login::after {
@@ -679,6 +691,13 @@ span {
 .catalog-menu .discount {
     background-color: #8ed78f;
     margin-right: 0px;
+    margin-left: 10px;
+}
+
+.catalog-menu .delivery {
+    background-color: #ffc047;
+    margin-right: 0px;
+    margin-left: 10px;
 }
 
 .catalog-menu .discount::before {
@@ -737,6 +756,9 @@ span {
 
 .slider {
     position: relative;
+    display: block;
+    min-height: 266px;
+    width: 620px;
 }
 
 
@@ -924,7 +946,7 @@ span {
 
 
 .catalog-items {
-    display: -webkit-box;
+  display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -932,6 +954,7 @@ span {
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
 .catalog-items li {
@@ -940,6 +963,8 @@ span {
     margin-bottom: 20px;
     overflow: hidden;
     border: 1px solid #e5e5e5;
+    width: 217px;
+    display: inline-block;
 }
 
 .catalog-items li:nth-child(4n) {
@@ -1258,9 +1283,9 @@ span {
     top: -5px;
     right: 0;
     z-index: 0;
-    width: 334px;
+    width: 389px;
     height: 263px;
-    background-image: url("../img/guarantee.jpg");
+    background-image: url("../img/guarantee.png");
     background-repeat: no-repeat;
 }
 
@@ -1270,9 +1295,9 @@ span {
     top: -5px;
     right: 0;
     z-index: 0;
-    width: 417px;
+    width: 467px;
     height: 274px;
-    background-image: url("../img/credit.jpg");
+    background-image: url("../img/credit.png");
     background-repeat: no-repeat;
 }
 
@@ -1744,6 +1769,7 @@ span {
     height: 20px;
     font-weight: normal;
     text-transform: uppercase;
+    padding-left: 17px;
 }
 
 
@@ -1796,12 +1822,16 @@ span {
 
 .price-range {
   position: relative;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-size: 17px;
+  font-family: 'PTSans', sans-serif, Arial;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
   font-style: normal;
-  width: 220px;
-  padding: 0 0 40px;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .price-range h3:after {
@@ -1858,7 +1888,7 @@ span {
 
 
 .price-controls input {
-  width: 70px;
+  width: 84px;
   padding: 8px 5px;
   margin-left: 5px;
   border: none;
@@ -2014,12 +2044,13 @@ span {
     min-height: 37px;
     margin-bottom: 20px;
     background-color: #f7f3ec;
+    margin-left: 21px;
 }
 
 .catalog-header p {
     width: 240px;
     margin: 0px;
-    margin-right: auto;
+    margin-right: -20px;
     text-transform: uppercase;
 }
 
@@ -2044,6 +2075,43 @@ span {
     width: 400px;
 }
 
+.sorting-list a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-top: 1px dotted #ee3643;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+    color: #000000;
+}
+
+.sorting-list a:active,
+.sorting-items .sort-activ {
+    color: #ee3643;
+}
+
+.sorting-list a:hover::after {
+    border-top-style: solid;
+}
+
+.sorting-list a:active::after,
+.sorting-items a.sort-activ::after {
+    border: none;
+}
+
+.sorting-items .sort-activ:hover::after {
+    border-top: 1px solid #ee3643;
+}
+
+.sorting-items .sort-activ:active::after {
+    border: none;
+}
 
 .sorting-items .sorting-buttons {
     width: 59px;
@@ -2054,8 +2122,8 @@ span {
     color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     margin-top: 0px;
+    margin-right: -19px
 }
-
 
 .sorting-list .sort-by-type {
     margin-left: 71px;

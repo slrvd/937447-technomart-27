@@ -156,18 +156,30 @@
                <ul class="catalog-items">
                   <li class="catalog-item">
                      <img src="img/9000.png" alt="BOSCH BFG 9000" width="218" height="137">
+					 <div class="actions">
+                                 <a class="buy" href="#">Купить</a>
+                                 <a class="bookmark" href="#">В закладки</a>
+                              </div>
                      <h3><span class="item-name">Перфоратор BOSCH</span> BFG 9000</h3>
                      <del class="discount">32500 Р.</del>
                      <a href="#" class="price-button">25500 Р.</a>
                   </li>
                   <li class="catalog-item">
                      <img src="img/item-bfg3000.png" alt="BOSCH BFG 3000" width="218" height="137">
-                     <h3><span class="item-name">Перфоратор BOSCH</span> BFG 3000</h3>
+					 <div class="actions">
+                                 <a class="buy" href="#">Купить</a>
+                                 <a class="bookmark" href="#">В закладки</a>
+                              </div>
+                     <h3><span class="item-name">Перфоратор BOSCH </span> BFG 3000</h3>
                      <del class="discount">22500 Р.</del>
                      <a href="#" class="price-button">15500 Р.</a>
                   </li>
                   <li class="catalog-item">
                      <img src="img/item-bfg-6000.png" alt="BOSCH BFG 6000" width="218" height="137">
+					 <div class="actions">
+                                 <a class="buy" href="#">Купить</a>
+                                 <a class="bookmark" href="#">В закладки</a>
+                              </div>
                      <h3><span class="item-name">Перфоратор BOSCH</span> BFG 6000</h3>
                      <del class="discount">30500 Р.</del>
                      <a href="#" class="price-button">25500 Р.</a>
@@ -392,19 +404,50 @@
             </div>
          </div>
       </footer>
-	  <div class="modal write-us">
-      <h2 class="visually-hidden">Напишите нам!</h2>
-      <button type="button" class="modal-close">Закрыть</button>
-      <form class="form-write-us" method="post" action="http://echo.htmlacademy.ru/">
-        <div class="form-container">
-          <p> <label for="wu-name">Ваше имя:</label> <input type="text" name="login" id="wu-name" placeholder="Представьтесь, пожалуйста"> </p>
-          <p> <label for="wu-e-mail">Ваш e-mail:</label> <input type="text" name="e-mail" id="wu-e-mail" placeholder="Для отправки ответа"> </p>
-          <p> <label for="wu-text">Текст письма:</label> <textarea name="text" id="wu-text" rows="4" placeholder="В свободной форме"></textarea> </p>
-        </div>
-        <div class="send">
-          <input class="button button-send" type="submit" value="Отправить" name="send" aria-label="Отправить">
-        </div>
-      </form>
-</div>
-   </body>
+	  <div class="map container">
+        <noscript>
+            <figure>
+                <img src="img/map.jpg" width="940" height="447" alt="Мы на карте">
+            </figure>
+        </noscript>
+        <div class="map-script"></div>
+        <a href="#" class="map-close"></a>
+    </div>
+    <div class="feedback container">
+        <a href="#" class="feedback-close"></a>
+        <form action="/feedback" method="post">
+            <div class="feedback-userdata">
+                <div class="feedback-block clearfix">
+                    <div class="feedback-left-column">
+                        <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                        <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="feedback-right-column">
+                        <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                        <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+                    </div>
+                </div>
+                <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+                <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+            </div>
+            <div class="feedback-block-buttons">
+                <button type="submit" class="feedback-btn">Отправить</button>
+                <a href="#" class="feedback-btn feedback-cancel">Отмена</a>
+            </div>
+        </form>
+    </div>
+    <div class="cart-notification">
+        <a href="#" class="cart-notification-close"></a>
+        <form action="/cart" method="post">
+            <p class="cart-notification-title">Товар добавлен в корзину!</p>
+            <div class="cart-notification-decision">
+                <button type="submit" class="cart-order-btn">Оформить заказ</button>
+                <a href="#" class="cart-cancel-btn">Продолжить покупки</a>
+            </div>
+        </form>
+    </div>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false">
+    </script>
+    <script src="js/script.js"></script>
+</body>
 </html>
