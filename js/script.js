@@ -1,5 +1,5 @@
 var feedbackPopup = document.querySelector(".feedback");
-var feedbackButton = document.querySelector(".company-feedback-btn");
+var feedbackButton = document.querySelector(".feedback-buttons");
 var feedbackClose = document.querySelector(".feedback-close");
 var feedbackCancel = document.querySelector(".feedback-cancel");
 
@@ -28,7 +28,7 @@ if (feedbackButton != null && feedbackClose != null && feedbackCancel != null) {
     });
 }
 
-var buyButtons = document.querySelectorAll(".catalog-item"), i;
+var buyButtons = document.querySelectorAll(".catalog-item .buy"), i;
 var cartBlock = document.querySelector(".cart-popup");
 var cartClose = document.querySelector(".cart-popup-close");
 var cartCancel = document.querySelector(".cart-cancel-btn");
