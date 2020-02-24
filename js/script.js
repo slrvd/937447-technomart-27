@@ -1,5 +1,5 @@
 var feedbackPopup = document.querySelector(".feedback");
-var feedbackButton = document.querySelector(".feedback-buttons");
+var feedbackButton = document.querySelector(".feedback-button");
 var feedbackClose = document.querySelector(".feedback-close");
 var feedbackCancel = document.querySelector(".feedback-cancel");
 
