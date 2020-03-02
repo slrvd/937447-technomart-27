@@ -587,7 +587,7 @@ text-align: right;
 .login:hover::after,
 .login:focus::after {
 	background-image: url("../img/icon-login-foc.svg");
-	
+
 }
 
 
@@ -733,7 +733,7 @@ text-align: right;
     font-family: "PTSans", sans-serif;
     color: #ffffff;
     background-color: #ee3643;
-	
+
 }
 
 .price-button::before {
@@ -1108,7 +1108,7 @@ text-align: right;
 .catalog-item:focus {
     -webkit-box-shadow: 0 10px 30px -10px #000000;
             box-shadow: 0 10px 30px -10px #000000;
-			
+
 }
 
 .catalog-items li {
@@ -1682,6 +1682,10 @@ text-align: right;
     border-bottom: 1px solid #f1f5f7;
 }
 
+.catalog-navigation-footer a:active {
+  opacity: 0.5;
+}
+
 
 .page-footer-bottom {
     padding-top: 30px;
@@ -1898,13 +1902,13 @@ text-align: right;
 .user-links::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-	
+
 }
 
 .user-links::after {
 	-webkit-box-sizing: inherit;
     box-sizing: inherit;
-	
+
 }
 
 .user-links a:hover,
@@ -2208,7 +2212,7 @@ text-align: right;
     background-image: url("../img/checkbox-off-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.5;
-	
+
 }
 /*
 .brands-checkbox input[type="checkbox"]:hover:checked + .checkbox-indicator,
@@ -2216,7 +2220,7 @@ text-align: right;
     background-image: url("../img/checkbox-on-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.4;
-	
+
 }
 
 */
@@ -2245,8 +2249,8 @@ text-align: right;
     letter-spacing: 1px;
 }
 
-.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {   
-    
+.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {
+
     background-image: url("../img/radio-off-hov.svg");
 	background-repeat: no-repeat;
 	opacity: 0.5;
@@ -2456,7 +2460,7 @@ text-align: right;
 .catalog-down-arrow::before {
     position: absolute;
     top: 0px;
-    left: 40px;
+    left: 26px;
     font-size: 18px;
     font-family: "symbols-technomart";
     font-style: normal;
@@ -2879,7 +2883,7 @@ textarea {
 
 .feedback textarea:hover {
    border: 2px solid #b5b5b5;
-	
+
 }
 
 .feedback textarea:focus {
@@ -2929,7 +2933,7 @@ textarea:focus,
     border-radius: 5px;
     outline: none;
     background-color: #ee3643;
-	
+
 }
 
 .feedback-btn {
@@ -3053,6 +3057,6 @@ textarea:focus,
 
 .show-block {
     display: block;
-    position: fixed;	
+    position: fixed;
 
 }
