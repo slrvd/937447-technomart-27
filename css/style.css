@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
 html {
@@ -182,7 +182,7 @@ height: 42px;
     display: flex;
     font-size: 17px;
     line-height: 18px;
-    font-family: "Cuprum";
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .logo-header {
@@ -190,7 +190,7 @@ height: 42px;
    display: block;
    padding: 14px 54px 8px;
    font-size: 24px;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Tahoma", sans-serif;
    color: #ffffff;
    text-transform: uppercase;
    background-color: #ee3643;
@@ -477,7 +477,7 @@ input {
     padding-left: 52px;
     font-size: 16px;
     line-height: 23px;
-    font-family: "Cuprum",  sans-serif;
+    font-family: "Cuprum", "Tahoma",  sans-serif;
     color: #ff5357;
     font-style: italic;
 }
@@ -512,7 +512,7 @@ text-align: right;
 .phone-header a {
     font-size: 21px;
     line-height: 18px;
-    font-family: "Cuprum",  sans-serif;
+    font-family: "Cuprum", "Tahoma",  sans-serif;
     color: #fb463c;
     position: relative;
     bottom: 10px;
@@ -538,7 +538,7 @@ text-align: right;
     padding-left: 10px;
     font-size: 14px;
     line-height: 24px;
-    font-family: "Cuprum",  sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
 }
 
@@ -570,7 +570,7 @@ text-align: right;
     padding-top: 10px;
     padding-bottom: 12px;
     font-size: 21px;
-    font-family: "Cuprum",  sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #000000;
     background-color: #ffffff;
     margin-left: -5px;
@@ -587,7 +587,7 @@ text-align: right;
 .login:hover::after,
 .login:focus::after {
 	background-image: url("../img/icon-login-foc.svg");
-
+	
 }
 
 
@@ -647,7 +647,7 @@ text-align: right;
     padding-left: 30px;
     font-size: 17px;
     line-height: 17px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
     -webkit-transition: 200ms all;
     -o-transition: 200ms all;
@@ -694,7 +694,7 @@ text-align: right;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
 }
 
@@ -711,7 +711,7 @@ text-align: right;
     width: 200px;
     font-size: 16px;
     line-height: 28px;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: "PT Sans Narrow", "Tahoma", sans-serif;
     text-align: center;
     color: #f0f0f0;
     text-transform: lowercase;
@@ -730,10 +730,10 @@ text-align: right;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
-    font-family: "PTSans", sans-serif;
+    font-family: "PTSans", "Tahoma", sans-serif;
     color: #ffffff;
     background-color: #ee3643;
-
+	
 }
 
 .price-button::before {
@@ -778,7 +778,7 @@ text-align: right;
     padding-left: 25px;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.1);
@@ -955,7 +955,7 @@ text-align: right;
     font: inherit;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     vertical-align: middle;
     text-align: center;
     color: #ffffff;
@@ -987,7 +987,7 @@ text-align: right;
     left: 24px;
     font-weight: bold;
     font-size: 36px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -997,7 +997,7 @@ text-align: right;
     top: 43px;
     left: 25px;
     font-size: 17px;
-    font-family: "PTSans", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
 }
 
@@ -1081,7 +1081,7 @@ text-align: right;
     margin: 0;
     font-size: 30px;
     line-height: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -1108,7 +1108,7 @@ text-align: right;
 .catalog-item:focus {
     -webkit-box-shadow: 0 10px 30px -10px #000000;
             box-shadow: 0 10px 30px -10px #000000;
-
+			
 }
 
 .catalog-items li {
@@ -1143,11 +1143,12 @@ text-align: right;
     margin-bottom: 12px;
     padding: 0 15px;
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    font-family: "PTSans", sans-serif;
+    font-size: 18px;
+    line-height: 1.11;
+    font-family: "PTSans", "Tahoma", sans-serif;
     color: #000000;
-    letter-spacing: -1px;
+	font-style: normal;
+    letter-spacing: normal;
     margin-top: -23px;
 }
 
@@ -1156,7 +1157,7 @@ text-align: right;
     margin-bottom: 11px;
     font-size: 16px;
     line-height: 18px;
-    font-family: "PTSans", sans-serif;
+    font-family: "PTSans", "Tahoma", sans-serif;
     color: #a9a9a9;
     text-decoration: line-through;
 }
@@ -1188,7 +1189,7 @@ text-align: right;
     display: block;
     width: 135px;
     padding-top: 6px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
@@ -1344,7 +1345,7 @@ text-align: right;
     margin: 0;
     margin-bottom: 30px;
     font-size: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: normal;
@@ -1355,7 +1356,7 @@ text-align: right;
     margin-bottom: 62px;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PTSans", sans-serif;
+    font-family: "PTSans", "Tahoma", sans-serif;
     color: #000000;
     line-height: 1.85;
     letter-spacing: normal;
@@ -1404,7 +1405,7 @@ text-align: right;
     font-weight: bold;
     font-size: 21px;
     line-height: 31px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
     background-color: #32425c;
     border-top: 1px solid #485973;
@@ -1432,7 +1433,7 @@ text-align: right;
     margin: 0;
     margin-top: 11px;
     font-size: 36px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -1508,7 +1509,7 @@ text-align: right;
     margin: 0;
     margin-bottom: 31px;
     font-size: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: normal;
@@ -1539,7 +1540,7 @@ text-align: right;
     list-style: none;
     font-size: 18px;
     line-height: 20px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .delivery-company-list li::before {
@@ -1593,7 +1594,7 @@ text-align: right;
     padding: 18px 41px 20px 41px;
     font-size: 30px;
     line-height: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #ee3643;
@@ -1626,7 +1627,7 @@ text-align: right;
 .site-navigation-footer a {
     font-size: 18px;
     line-height: 24px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #f4f8fa;
 }
 
@@ -1647,7 +1648,7 @@ text-align: right;
     margin: 0;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #f4f8fa;
 }
 
@@ -1673,17 +1674,13 @@ text-align: right;
     height: 17px;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffda96;
 }
 
 .catalog-navigation-footer a:hover,
 .catalog-navigation-footer a:focus {
     border-bottom: 1px solid #f1f5f7;
-}
-
-.catalog-navigation-footer a:active {
-  opacity: 0.5;
 }
 
 
@@ -1699,7 +1696,7 @@ text-align: right;
     padding: 0;
     font-size: 16px;
     line-height: 18px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
 }
 
@@ -1782,7 +1779,7 @@ text-align: right;
         flex-basis: 110px;
     font-size: 16px;
     line-height: 18px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
 }
 
@@ -1877,7 +1874,7 @@ text-align: right;
     list-style: none;
     font-size: 16px;
     line-height: 18px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .user-links li {
@@ -1902,13 +1899,13 @@ text-align: right;
 .user-links::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-
+	
 }
 
 .user-links::after {
 	-webkit-box-sizing: inherit;
     box-sizing: inherit;
-
+	
 }
 
 .user-links a:hover,
@@ -1972,10 +1969,11 @@ text-align: right;
     padding: 0;
     font-size: 30px;
     line-height: 40px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
     text-transform: uppercase;
     letter-spacing: -1px;
+	font-weight: normal;
 }
 
 .catalog-name-range {
@@ -2052,7 +2050,7 @@ text-align: right;
 .price-range {
   position: relative;
   font-size: 14px;
-  font-family: 'PTSans', sans-serif, Arial;
+  font-family: 'PTSans', "Tahoma", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-stretch: normal;
@@ -2123,7 +2121,7 @@ text-align: right;
   border: none;
   background: #f7f3ec;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', "Tahoma", sans-serif;
   font-weight: 300;
   font-style: normal;
   text-align: center;
@@ -2185,6 +2183,13 @@ text-align: right;
     text-transform: uppercase;
     font-style: 17px;
     letter-spacing: 1px;
+	width: 81px;
+    height: 171px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-family: PTSans, "Tahoma", sans-serif;
+	font-size: 15px;
+	letter-spacing: normal;
 }
 
 .brands-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -2212,7 +2217,7 @@ text-align: right;
     background-image: url("../img/checkbox-off-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.5;
-
+	
 }
 /*
 .brands-checkbox input[type="checkbox"]:hover:checked + .checkbox-indicator,
@@ -2220,7 +2225,7 @@ text-align: right;
     background-image: url("../img/checkbox-on-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.4;
-
+	
 }
 
 */
@@ -2245,12 +2250,25 @@ text-align: right;
     padding-left: 35px;
     line-height: 20px;
     text-transform: uppercase;
-    font-style: 17px;
+
     letter-spacing: 1px;
+	 width: 130px;
+    height: 51px;
+    font-family: PTSans, "Tahoma", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+
+  font-stretch: normal;
+
+  font-style: normal;
+
+ 
+
+  letter-spacing: normal;
 }
 
-.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {
-
+.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {   
+    
     background-image: url("../img/radio-off-hov.svg");
 	background-repeat: no-repeat;
 	opacity: 0.5;
@@ -2643,7 +2661,7 @@ text-align: right;
 }
 
 .cart-popup-title {
-  font-family: "Cuprum",sans-serif,Arial;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -2687,7 +2705,7 @@ text-align: right;
 }
 
 .cart-order-btn {
-  font-family: "Cuprum",sans-serif,Arial;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2725,7 +2743,7 @@ text-align: right;
 }
 
 .cart-cancel-btn {
-  font-family: "Cuprum",sans-serif,Arial;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2873,7 +2891,7 @@ textarea {
 }
 
 .feedback textarea {
-   font-family: "PT Sans",sans-serif,Arial;
+   font-family: "PT Sans", "Tahoma", sans-serif;
    font-size: 13px;
    line-height: 18px;
    font-weight: 400;
@@ -2883,7 +2901,7 @@ textarea {
 
 .feedback textarea:hover {
    border: 2px solid #b5b5b5;
-
+	
 }
 
 .feedback textarea:focus {
@@ -2892,7 +2910,7 @@ textarea {
 
 .feedback-data {
   margin-bottom: 9px;
-  font-family: "Cuprum",sans-serif,Arial;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -2933,11 +2951,11 @@ textarea:focus,
     border-radius: 5px;
     outline: none;
     background-color: #ee3643;
-
+	
 }
 
 .feedback-btn {
-    font-family: "Cuprum",sans-serif,Arial;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -2964,7 +2982,7 @@ textarea:focus,
 }
 
 .feedback-cancel {
-    font-family: "Cuprum",sans-serif,Arial;
+    font-family: "Cuprum", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -3057,6 +3075,6 @@ textarea:focus,
 
 .show-block {
     display: block;
-    position: fixed;
+    position: fixed;	
 
 }
