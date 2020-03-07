@@ -369,8 +369,8 @@ input {
 .bookmarks-catalog::before {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 71px;
+    top: 54%;
+    left: 69px;
     width: 14px;
     height: 16px;
     margin-top: -10px;
@@ -383,6 +383,9 @@ input {
     transition: 200ms all;
 }
 
+.bookmarks-catalog {
+  left: 8px;
+}
 
 .bookmarks:hover::before,
 .bookmarks:focus::before {
@@ -407,7 +410,7 @@ input {
    width: 140px;
    padding-left: 40px;
    background-color: #ee3643;
-   margin-bottom: 63px;
+
    height: 30px;
 }
 
@@ -480,6 +483,16 @@ input {
     font-family: "Cuprum", "Tahoma",  sans-serif;
     color: #ff5357;
     font-style: italic;
+
+}
+
+.about-text {
+    white-space: pre;
+    position: relative;
+    width: 196px;
+    height: 60px;
+    left: -81px;
+    bottom: 23px;
 }
 
 .contacts-header {
@@ -587,12 +600,12 @@ text-align: right;
 .login:hover::after,
 .login:focus::after {
 	background-image: url("../img/icon-login-foc.svg");
-	
+
 }
 
 
 .log-name {
-  padding-left: 45px;
+  padding-left: 36px;
 }
 
 .login::after {
@@ -730,10 +743,10 @@ text-align: right;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
-    font-family: "PTSans", "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     color: #ffffff;
     background-color: #ee3643;
-	
+
 }
 
 .price-button::before {
@@ -887,9 +900,12 @@ text-align: right;
 }
 
 .slider2 div {
-    float: left;
     width: 620px;
     height: 266px;
+}
+
+.slider2 {
+  display: flex;
 }
 
 .slider-controls {
@@ -1035,6 +1051,8 @@ text-align: right;
     -ms-transform: translate(-620px);
     transform: translate(-620px);
 }
+
+
 /*Популярные товары*/
 
 .popular-products {
@@ -1108,7 +1126,7 @@ text-align: right;
 .catalog-item:focus {
     -webkit-box-shadow: 0 10px 30px -10px #000000;
             box-shadow: 0 10px 30px -10px #000000;
-			
+
 }
 
 .catalog-items li {
@@ -1145,7 +1163,7 @@ text-align: right;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.11;
-    font-family: "PTSans", "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     color: #000000;
 	font-style: normal;
     letter-spacing: normal;
@@ -1157,7 +1175,7 @@ text-align: right;
     margin-bottom: 11px;
     font-size: 16px;
     line-height: 18px;
-    font-family: "PTSans", "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     color: #a9a9a9;
     text-decoration: line-through;
 }
@@ -1348,19 +1366,37 @@ text-align: right;
     font-family: "Cuprum", "Tahoma", sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
+    line-height: 1.85;
     font-weight: normal;
+}
+
+.text-pre-footer {
+  white-space: pre;
+  position: relative;
+  left: -58px;
+
 }
 
 .services-info {
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 0px;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PTSans", "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     color: #000000;
     line-height: 1.85;
     letter-spacing: normal;
     text-align: left;
+    white-space: pre;
+    position: relative;
+    bottom: 25px;
+    left: -59px;
+}
+
+.service-index {
+  position: relative;
+  bottom: 12px;
+  left: 4px;
 }
 
 .services input[type="radio"] {
@@ -1431,13 +1467,13 @@ text-align: right;
 
 .service-description h3 {
     margin: 0;
-    margin-top: 11px;
+    margin-top: 13px;
     font-size: 36px;
     font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
     text-transform: uppercase;
-    letter-spacing: -1px;
     font-weight: normal;
+    margin-left: 0px;
 }
 
 .service-description p {
@@ -1447,6 +1483,16 @@ text-align: right;
     margin-top: 31px;
     margin-bottom: 30px;
     padding-right: 300px;
+}
+
+.delivery-head {
+  position: relative;
+  left: 70px;
+}
+
+.guarantee-head {
+  position: relative;
+  left: 70px;
 }
 
 .service-description .delivery::before {
@@ -1471,6 +1517,25 @@ text-align: right;
     height: 263px;
     background-image: url("../img/guarantee.png");
     background-repeat: no-repeat;
+}
+
+.delivery-text,
+.guarantee-text {
+  white-space: pre;
+}
+
+.delivery-text {
+
+  left: -30px;
+  bottom: 20px;
+
+}
+.guarantee-text {
+
+position: relative;
+left: -30px;
+bottom: 20px;
+
 }
 
 .service-description .credit::before {
@@ -1502,6 +1567,20 @@ text-align: right;
 
 .about-company {
     padding-right: 20px;
+}
+
+.man-shopping {
+  white-space: pre;
+  position: relative;
+  left: -77px;
+  bottom: 2px;
+}
+
+.about-delivery {
+  white-space: pre;
+  position: relative;
+  left: -77px;
+  bottom: 2px;
 }
 
 .about-company-title,
@@ -1818,8 +1897,8 @@ text-align: right;
 .logged::before {
     content: "";
     position: absolute;
-    top: 12px;
-    left: -37px;
+    top: 11px;
+    left: -46px;
     width: 20px;
     height: 18px;
     background-image: url("../img/icon-user.svg");
@@ -1831,11 +1910,11 @@ text-align: right;
     transition: 200ms all;
 }
 
-.logged::after {
+.log-out {
     content: "";
     position: absolute;
-    top: 14px;
-    right: 6px;
+    top: 102px;
+    right: 215px;
     width: 21px;
     height: 17px;
     background-image: url("../img/icon-logout.svg");
@@ -1850,13 +1929,13 @@ text-align: right;
 }
 
 
-.logged:hover::after,
-.logged:focus::after {
+.log-out:hover,
+.log-out:focus {
     background-image: url("../img/icon-logout-log.svg");
 }
 
 .logged:active::before,
-.logged:active::after,
+.log-out:active,
 .log-name:active {
     opacity: 0.3;
 }
@@ -1869,7 +1948,7 @@ text-align: right;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0;
-    margin-left: 114px;
+    margin-left: 106px;
     padding: 0;
     list-style: none;
     font-size: 16px;
@@ -1899,13 +1978,13 @@ text-align: right;
 .user-links::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-	
+
 }
 
 .user-links::after {
 	-webkit-box-sizing: inherit;
     box-sizing: inherit;
-	
+
 }
 
 .user-links a:hover,
@@ -1938,10 +2017,13 @@ text-align: right;
     position: relative;
     margin-right: 40px;
     padding-top: 2px;
+    left: -1px;
 }
 
 .breadcrumbs li:last-child {
     margin-right: 0;
+    left: 2px;
+    bottom: 2px;
 }
 
 .breadcrumbs li::after {
@@ -1972,7 +2054,7 @@ text-align: right;
     font-family: "Cuprum", "Tahoma", sans-serif;
     color: #3d546e;
     text-transform: uppercase;
-    letter-spacing: -1px;
+
 	font-weight: normal;
 }
 
@@ -2050,7 +2132,7 @@ text-align: right;
 .price-range {
   position: relative;
   font-size: 14px;
-  font-family: 'PTSans', "Tahoma", sans-serif;
+  font-family: 'PT Sans', "Tahoma", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-stretch: normal;
@@ -2148,22 +2230,15 @@ text-align: right;
     margin-bottom: 14px;
 }
 
-.brand-filter::before,
-.brand-filter::after {
+.brand-filter::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
+    bottom: 256px;
 }
 
-.brand-filter::before {
-    top: -18px;
-}
-
-.brand-filter::after {
-    bottom: 0;
-}
 
 .brand-filter ul {
     margin: 0;
@@ -2187,7 +2262,7 @@ text-align: right;
     height: 171px;
     font-weight: normal;
     font-stretch: normal;
-    font-family: PTSans, "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 15px;
 	letter-spacing: normal;
 }
@@ -2217,7 +2292,7 @@ text-align: right;
     background-image: url("../img/checkbox-off-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.5;
-	
+
 }
 /*
 .brands-checkbox input[type="checkbox"]:hover:checked + .checkbox-indicator,
@@ -2225,7 +2300,7 @@ text-align: right;
     background-image: url("../img/checkbox-on-hov.svg");
     background-repeat: no-repeat;
 	opacity: 0.4;
-	
+
 }
 
 */
@@ -2254,7 +2329,7 @@ text-align: right;
     letter-spacing: 1px;
 	 width: 130px;
     height: 51px;
-    font-family: PTSans, "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 15px;
     font-weight: normal;
 
@@ -2262,13 +2337,13 @@ text-align: right;
 
   font-style: normal;
 
- 
+
 
   letter-spacing: normal;
 }
 
-.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {   
-    
+.work-radio input[type="radio"]:hover:not(:checked) + .radio-indicator {
+
     background-image: url("../img/radio-off-hov.svg");
 	background-repeat: no-repeat;
 	opacity: 0.5;
@@ -2405,6 +2480,10 @@ text-align: right;
     margin-left: 89px;
 }
 
+.sort-by-type {
+  left: -9px;
+}
+
 .sorting-list .sort-by-functionality {
     margin-left: 65px;
 }
@@ -2433,7 +2512,7 @@ text-align: right;
 
 .catalog-up-arrow {
     position: relative;
-    margin-left: -9px;
+    margin-left: -4px;
     text-decoration: none;
 }
 
@@ -2456,8 +2535,8 @@ text-align: right;
 .catalog-up-arrow::before {
     position: absolute;
     top: 0px;
-    left: 0;
-    font-size: 18px;
+    left: 1;
+    font-size: 15px;
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
@@ -2478,8 +2557,8 @@ text-align: right;
 .catalog-down-arrow::before {
     position: absolute;
     top: 0px;
-    left: 26px;
-    font-size: 18px;
+    left: 28px;
+    font-size: 15px;
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
@@ -2606,6 +2685,7 @@ text-align: right;
     position: absolute;
     right: 40px;
     top: 20px;
+    border: none;
 }
 
 .cart-popup-close:before {
@@ -2795,6 +2875,7 @@ text-align: right;
     position: absolute;
     right: 40px;
     top: 20px;
+    border: none;
 }
 
 .feedback-close:before {
@@ -2838,13 +2919,13 @@ text-align: right;
 }
 
 .feedback-left-column {
-    float: left;
+    display: flex;
     width: 220px;
 	margin-top: -40px;
 }
 
 .feedback-right-column {
-    float: right;
+    display: flex;
     width: 220px;
 	margin-top: -40px;
 }
@@ -2901,7 +2982,7 @@ textarea {
 
 .feedback textarea:hover {
    border: 2px solid #b5b5b5;
-	
+
 }
 
 .feedback textarea:focus {
@@ -2951,7 +3032,7 @@ textarea:focus,
     border-radius: 5px;
     outline: none;
     background-color: #ee3643;
-	
+
 }
 
 .feedback-btn {
@@ -3075,6 +3156,6 @@ textarea:focus,
 
 .show-block {
     display: block;
-    position: fixed;	
+    position: fixed;
 
 }
