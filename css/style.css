@@ -997,10 +997,9 @@ text-align: right;
     position: relative;
 }
 
-.catalog-box .slide-title {
-    position: absolute;
-    top: -7px;
-    left: 24px;
+.catalog-box .slide-title  {
+
+
     font-weight: bold;
     font-size: 36px;
     font-family: "Cuprum", "Tahoma", sans-serif;
@@ -1008,19 +1007,19 @@ text-align: right;
     text-transform: uppercase;
 }
 
+
 .catalog-box .slide-description {
-    position: absolute;
-    top: 43px;
-    left: 25px;
+
+
     font-size: 17px;
     font-family: "Cuprum", "Tahoma", sans-serif;
     color: #ffffff;
 }
 
 .catalog-box .slider-button {
-    position: absolute;
-    top: 205px;
-    left: 25px;
+
+  margin-left:  16px;
+  margin-top: 97px;
 }
 
 
@@ -1052,6 +1051,27 @@ text-align: right;
     transform: translate(-620px);
 }
 
+.slide-first {
+background-image: url("../img/slider-image.jpg");
+
+}
+
+.slide-second {
+background-image: url("../img/slide-image2.jpg");
+
+}
+
+.slide-title {
+  padding-left: 16px;
+  margin-top: 21px;
+  margin-bottom: 17px;
+}
+
+.slide-description {
+  padding-left: 16px;
+  margin-top: 21px;
+  margin-bottom: 17px;
+}
 
 /*Популярные товары*/
 
