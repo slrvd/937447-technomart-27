@@ -12,9 +12,7 @@ html {
 	box-sizing: border-box;
 }
 
-div {
-	display: block;
-}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -75,9 +73,6 @@ img {
 	flex-basis: 0;
 }
 
-.block {
-	margin-right: -43px;
-}
 
 .block:last-of-type {
 	margin-right: 0;
@@ -479,12 +474,7 @@ input {
 }
 
 .about-text {
-	white-space: pre;
-	position: relative;
 	width: 196px;
-	height: 60px;
-	left: -81px;
-	bottom: 23px;
 }
 
 .contacts-header {
@@ -554,9 +544,7 @@ input {
 	margin-bottom: 6px;
 	padding-left: 25px;
 	list-style: none;
-	margin-left: 63px;
-	margin-right: -13px;
-	width: 305px;
+	margin-right: -17px;
 }
 
 .user-blocks-catalog {
@@ -567,9 +555,7 @@ input {
 	margin-bottom: 6px;
 	padding-left: 25px;
 	list-style: none;
-	margin-left: 70px;
-	margin-right: -8px;
-	width: 305px;
+	margin-right: -19px;
 }
 
 .user-blocks li {
@@ -984,6 +970,7 @@ input {
 	-o-transition: 150ms all;
 	transition: 150ms all;
 	border-radius: 5px;
+  margin-left: -25px;
 }
 
 .button:hover {
@@ -1374,14 +1361,13 @@ input {
 }
 
 .text-pre-footer {
-	white-space: pre;
-	position: relative;
-	left: -58px;
+	white-space: pre-line;
+	width: 918px;
 }
 
 .services-info {
-	margin: 0;
-	margin-bottom: 0px;
+	margin-top: -58px;
+	margin-bottom: 38px;
 	font-size: 13px;
 	line-height: 24px;
 	font-family: "PT Sans", "Tahoma", sans-serif;
@@ -1389,10 +1375,8 @@ input {
 	line-height: 1.85;
 	letter-spacing: normal;
 	text-align: left;
-	white-space: pre;
-	position: relative;
-	bottom: 25px;
-	left: -59px;
+	white-space: pre-line;
+
 }
 
 .service-index {
@@ -1475,27 +1459,17 @@ input {
 	color: #3d546e;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin-left: 0px;
+	margin-left: -26px;
 }
 
 .service-description p {
-	position: relative;
 	z-index: 1;
 	margin: 0;
-	margin-top: 31px;
-	margin-bottom: 30px;
-	padding-right: 300px;
+	margin-top: 5px;
+	margin-bottom: 33px;
+  margin-left: -24px;
 }
 
-.delivery-head {
-	position: relative;
-	left: 70px;
-}
-
-.guarantee-head {
-	position: relative;
-	left: 70px;
-}
 
 .service-description .delivery::before {
 	content: "";
@@ -1523,18 +1497,11 @@ input {
 
 .delivery-text,
 .guarantee-text {
-	white-space: pre;
+	white-space: pre-line;
 }
 
-.delivery-text {
-	left: -30px;
-	bottom: 20px;
-}
-
-.guarantee-text {
-	position: relative;
-	left: -30px;
-	bottom: 20px;
+.credit-text {
+  padding-top: 23px;
 }
 
 .service-description .credit::before {
@@ -1569,17 +1536,11 @@ input {
 }
 
 .man-shopping {
-	white-space: pre;
-	position: relative;
-	left: -77px;
-	bottom: 2px;
+	white-space: pre-line;
 }
 
 .about-delivery {
-	white-space: pre;
-	position: relative;
-	left: -77px;
-	bottom: 2px;
+	white-space: pre-line;
 }
 
 .about-company-title,
@@ -1595,8 +1556,8 @@ input {
 
 .about-company p {
 	margin: 0;
-	margin-bottom: 27px;
-	padding: 0;
+	margin-bottom: 18px;
+  margin-top: -22px;
 }
 
 .about-company p:last-of-type {
@@ -1634,6 +1595,7 @@ input {
 
 .about-company-button {
 	padding: 10px 40px;
+  margin: 0px;
 }
 
 .button-map {
@@ -1935,7 +1897,7 @@ input {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-left: 106px;
+	margin-left: 40px;
 	padding: 0;
 	list-style: none;
 	font-size: 16px;
@@ -2630,7 +2592,7 @@ input {
 }
 
 .about-drills p {
-	margin: 0;
+	margin-top: -21px;
 }
 
 
@@ -2657,7 +2619,14 @@ input {
 	right: 40px;
 	top: 20px;
 	border: none;
+  content: none;
+  display:
 }
+
+.cart-popup-close {
+  background-color: transparent
+}
+
 
 .cart-popup-close:before {
 	position: absolute;
@@ -2886,7 +2855,9 @@ input {
 	right: 40px;
 	top: 20px;
 	border: none;
+  background-color: transparent
 }
+
 
 .feedback-close:before {
 	position: absolute;
