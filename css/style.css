@@ -328,21 +328,21 @@ input {
 	padding-left: 12px;
 	position: relative;
 	width: 150px;
-	left: 12px;
+	left: 6px;
 }
 
 .bookmarks,
 .bookmarks-catalog {
 	position: relative;
 	width: 150px;
-	padding-left: 96px;
+	padding-left: 105px;
 }
 
 .bookmarks::before {
 	content: "";
 	position: absolute;
 	top: 54%;
-	left: 69px;
+	left: 76px;
 	width: 14px;
 	height: 16px;
 	margin-top: -10px;
@@ -433,7 +433,7 @@ input {
 }
 
 .order {
-	width: 150px;
+	width: 153px;
 	padding-left: 17px;
 	padding-top: 12px;
 	background-color: #63a63e;
@@ -442,9 +442,9 @@ input {
 	transition: 200ms all;
 	line-height: 1.06;
 	margin-left: 0px;
-	margin-right: -4px;
+	margin-right: 2px;
 	height: 30px;
-	padding-right: 15px;
+	padding-right: 13px;
 }
 
 .order:hover,
@@ -494,13 +494,16 @@ input {
 }
 */
 	position: relative;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 	border: 3px solid #ffffff;
 	padding-top: 1px;
 	padding-bottom: 2px;
 	height: 36px;
 	text-align: right;
 	margin-top: 0px;
+  padding-right: 4px;
+  margin-right: 24px;
+  margin-left: -23px;
 }
 
 .phone-header a {
@@ -528,12 +531,13 @@ input {
 }
 
 .address-header {
-	margin-top: 4px;
+	margin-top: 0px;
 	padding-left: 10px;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #3d546e;
+  margin-left: -21px;
 }
 
 .user-blocks {
@@ -606,7 +610,7 @@ input {
 	content: "";
 	position: absolute;
 	top: 14px;
-	left: 17px;
+	left: 12px;
 	width: 20px;
 	height: 17px;
 	background-image: url("../img/icon-login.svg");
@@ -626,7 +630,7 @@ input {
 
 .registration {
 	width: 136x;
-	padding-left: 23px;
+	padding-left: 24px;
 	width: 128px;
 }
 
@@ -647,10 +651,6 @@ input {
 
 .navigation-header a {
 	display: block;
-	padding-top: 22px;
-	padding-right: 30px;
-	padding-bottom: 18px;
-	padding-left: 30px;
 	font-size: 17px;
 	line-height: 17px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
@@ -658,6 +658,9 @@ input {
 	-webkit-transition: 200ms all;
 	-o-transition: 200ms all;
 	transition: 200ms all;
+  margin-left: 25px;
+  margin-right: 37px;
+  margin-top: 21px;
 }
 
 .navigation-header::after {
@@ -778,9 +781,9 @@ input {
 	width: 110px;
 	margin-bottom: 22px;
 	margin-left: 25px;
-	padding-top: 11px;
+	padding-top: 9px;
 	padding-bottom: 9px;
-	padding-left: 25px;
+	padding-left: 28px;
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
@@ -939,7 +942,7 @@ input {
 }
 
 .slider-next-btn {
-	right: 25px;
+	right: 22px;
 	width: 22px;
 	height: 40px;
 	background-color: transparent;
@@ -994,14 +997,14 @@ input {
 }
 
 .catalog-box .slide-description {
-	font-size: 17px;
+	font-size: 18px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #ffffff;
 }
 
 .catalog-box .slider-button {
-	margin-left: 16px;
-	margin-top: 97px;
+	margin-left: 24px;
+	margin-top: 99px;
 }
 
 .slider2 {
@@ -1039,15 +1042,13 @@ input {
 }
 
 .slide-title {
-	padding-left: 16px;
-	margin-top: 21px;
-	margin-bottom: 17px;
+	padding-left: 23px;
+	margin-top: 26px;
+  margin-bottom: -6px;
 }
 
 .slide-description {
-	padding-left: 16px;
-	margin-top: 21px;
-	margin-bottom: 17px;
+	padding-left: 26px;
 }
 
 
@@ -1064,10 +1065,11 @@ input {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin-bottom: 20px;
-	padding: 24px 28px;
+	margin-bottom: 22px;
+	padding: 14px 28px;
 	background-color: #f9f5f0;
-	margin-top: 33px;
+  height: 55px;
+  margin-top: 40px;
 }
 
 .popular-title-range-dev .button {
@@ -1089,6 +1091,8 @@ input {
 	padding: 14px 26px;
 	background-color: #f9f5f0;
 	margin-top: 18px;
+  margin-top: -15px;
+  height: 51px;
 }
 
 .popular-section-title {
@@ -1103,6 +1107,7 @@ input {
 	line-height: 1;
 	letter-spacing: normal;
 	text-align: left;
+  margin-top: 4px;
 }
 
 .catalog-items {
@@ -1159,7 +1164,7 @@ input {
 	color: #000000;
 	font-style: normal;
 	letter-spacing: normal;
-	margin-top: -23px;
+	margin-top: -21px;
 }
 
 .catalog-item .discount {
@@ -1170,6 +1175,7 @@ input {
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	color: #a9a9a9;
 	text-decoration: line-through;
+  font-weight: bold;
 }
 
 .catalog-item:hover>img {
@@ -1355,8 +1361,7 @@ input {
 	font-size: 30px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	text-transform: uppercase;
-	letter-spacing: -1px;
-	line-height: 1.85;
+	line-height: 1;
 	font-weight: normal;
 }
 
@@ -1366,7 +1371,7 @@ input {
 }
 
 .services-info {
-	margin-top: -58px;
+	margin-top: -27px;
 	margin-bottom: 38px;
 	font-size: 13px;
 	line-height: 24px;
@@ -1376,12 +1381,11 @@ input {
 	letter-spacing: normal;
 	text-align: left;
 	white-space: pre-line;
-
+  margin-left: 4px;
 }
 
 .service-index {
 	position: relative;
-	bottom: 12px;
 	left: 4px;
 }
 
@@ -1395,6 +1399,8 @@ input {
 	padding: 0;
 	padding-top: 8px;
 	list-style: none;
+  margin-top: 24px;
+  margin-left: 3px;
 }
 
 .services-list:after {
@@ -1453,21 +1459,21 @@ input {
 
 .service-description h3 {
 	margin: 0;
-	margin-top: 13px;
+	margin-top: 33px;
 	font-size: 36px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	color: #3d546e;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin-left: -26px;
+	margin-left: 3px;
 }
 
 .service-description p {
 	z-index: 1;
 	margin: 0;
-	margin-top: 5px;
+	margin-top: 7px;
 	margin-bottom: 33px;
-  margin-left: -24px;
+  margin-left: 3px;
 }
 
 
@@ -1550,14 +1556,16 @@ input {
 	font-size: 30px;
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	text-transform: uppercase;
-	letter-spacing: -1px;
 	font-weight: normal;
+  line-height: 1;
 }
 
 .about-company p {
 	margin: 0;
-	margin-bottom: 18px;
-  margin-top: -22px;
+	margin-bottom: 30px;
+  margin-top: -32px;
+  line-height: 1.85;
+  margin-left: 2px;
 }
 
 .about-company p:last-of-type {
@@ -1573,9 +1581,9 @@ input {
 .delivery-company-list li {
 	position: relative;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	padding: 0;
-	padding-left: 35px;
+	padding-left: 36px;
 	list-style: none;
 	font-size: 18px;
 	line-height: 20px;
@@ -1604,17 +1612,22 @@ input {
 }
 
 .contacts p {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+  padding-right: 100px;
+  margin-left: 11px;
+  margin-top: -6px;
 }
 
 .contacts img {
-	margin-bottom: 37px;
+	margin-bottom: 28px;
+  margin-left: 10px;
 }
 
 .feedback-button {
-	width: 64%;
+	width: 65%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+  margin-left: -2px;
 }
 
 
@@ -1623,6 +1636,11 @@ input {
 .page-footer-top {
 	background-color: #32425c;
 	margin-top: 87px;
+}
+
+.page-footer-top-catalog {
+  background-color: #32425c;
+	margin-top: -16px;
 }
 
 .nav-footer-range1 {
@@ -1754,7 +1772,7 @@ input {
 }
 
 .footer-social li {
-	margin-right: 4px;
+	margin-right: 1px;
 }
 
 .social-button {
@@ -2085,10 +2103,10 @@ input {
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 1.76;
 	letter-spacing: normal;
 	text-align: left;
 	margin-bottom: 40px;
+  margin-top: -2px;
 }
 
 .price-range h3:after {
@@ -2131,7 +2149,7 @@ input {
 	background: #ababab;
 	position: absolute;
 	top: 30px;
-	left: 30px;
+	left: 23px;
 	cursor: pointer;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -2145,7 +2163,7 @@ input {
 .price-controls input {
 	width: 84px;
 	padding: 6px 6px;
-	margin-left: 5px;
+	margin-left: 7px;
 	border: none;
 	background: #f7f3ec;
 	font-size: 16px;
@@ -2173,7 +2191,7 @@ input {
 
 .brand-filter legend {
 	margin: 0;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 }
 
 .brand-filter::before {
@@ -2251,7 +2269,7 @@ input {
 */
 
 .charge-filter {
-	margin-bottom: 60px;
+	margin-bottom: 68px;
 }
 
 .charge-filter ul {
@@ -2266,7 +2284,7 @@ input {
 
 .work-radio {
 	position: relative;
-	padding-left: 35px;
+	padding-left: 37px;
 	line-height: 20px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -2278,6 +2296,7 @@ input {
 	font-stretch: normal;
 	font-style: normal;
 	letter-spacing: normal;
+  top: 10px;
 }
 
 .work-radio input[type="radio"]:hover:not(:checked)+.radio-indicator {
@@ -2288,7 +2307,7 @@ input {
 
 .work-radio input[type="radio"]+.radio-indicator {
 	position: absolute;
-	top: -4px;
+	top: 0px;
 	left: 0;
 	width: 25px;
 	height: 25px;
@@ -2307,7 +2326,7 @@ input {
 }
 
 .filter-button {
-	padding: 9px 38px;
+	padding: 9px 41px;
 	text-transform: uppercase;
 	background-color: #ffffff;
 	border: 1px solid #eaeaea;
@@ -2449,7 +2468,7 @@ input {
 
 .catalog-up-arrow {
 	position: relative;
-	margin-left: -4px;
+	margin-left: -1px;
 	text-decoration: none;
 }
 
@@ -2457,6 +2476,7 @@ input {
 	position: relative;
 	margin-right: 15px;
 	text-decoration: none;
+  right: -3px;
 }
 
 .catalog-options-active {
@@ -2474,7 +2494,7 @@ input {
 	top: 0px;
 	left: 1;
 	font-size: 15px;
-	font-family: "symbols-technomart";
+	font-family: "symbols-technomart", "Tahoma", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -2496,7 +2516,7 @@ input {
 	top: 0px;
 	left: 28px;
 	font-size: 15px;
-	font-family: "symbols-technomart";
+	font-family: "symbols-technomart", "Tahoma", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -2589,10 +2609,11 @@ input {
 	padding-top: 61px;
 	padding-bottom: 70px;
 	background-color: #f4f8fa;
+  margin-top: 26px;
 }
 
 .about-drills p {
-	margin-top: -21px;
+	margin-top: -28px;
 }
 
 
